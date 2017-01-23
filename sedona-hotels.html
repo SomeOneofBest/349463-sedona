@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+          <div class="container">
+              <nav class="main-navigation">
+                  <ul>
+                    <li><a href="#">ИНФОРМАЦИЯ</a></li>
+                    <li><a href="#">ФОТО И ВИДЕО</a></li>
+                    <li><a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип"></a></li>
+                    <li><a href="#">КАРТА ШТАТА</a></li>
+                    <li><a href="#">ГОСТИНИЦЫ</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+    </div>
+    <main class="options-hotel">
+      <form class="hotel-menu" action="index.html" method="post">
+        <p class="infrastructure-menu">ИНФРАСТУКТУРА:
+           <p><input type="checkbox" name="swiming-pool" value="Бассейн" checked>БАССЕЙН</p>
+           <p><input type="checkbox" name="parking" value="Парковка">ПАРКОВКА</p>
+           <p><input type="checkbox" name="internet" value="Wi-Fi">Wi-Fi</p>
+        </p>
+        <p class="type-hotel">Тип Жилья:
+           <p><input type="checkbox" id="type-hotel" value="Гостиница" checked>ГОСТИНИЦА</p>
+           <p><input type="checkbox" id="type-motel" value="Мотель" checked>МОТЕЛЬ</p>
+           <p><input type="checkbox" id="type-appartments" value="Аппартаменты" checked>АПАРТАМЕНТЫ</p>
+        </p>
+        <p class="value" id="value-hotel">СТОИМОСТЬ В СУТКИ (Р):
+            <table class="chouse-value">
+              <tr>
+                <td>ОТ 0</td>
+                <td>ДО 3000</td>
+              </tr>
+            </table>
+            <input type="range" min="0" max="4000" step="500" value="2000">
+        </p>
+        <input type="submit" name="hotels-value" value="Показать">
+      </form>
+    </main>
+    <section class="search-position">
+      <h1>НАЙДЕНО:3</h1>
+      <nav class="sorting">СОРТИРОВКА:
+        <ul>
+          <li>ПО ЦЕНЕ</li>
+          <li>ПО ТИПУ</li>
+          <li>ПО РЕЙТИНГУ</li>
+        </ul>
+      </nav>
+      <!-- ВАЖНО каждое фото разное -->
+      <hr>
+      <article class="hotel-1">
+        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+        <h3>AMARA RESORT & SPA</h3>
+        <!-- Скорее всего не прав с id, думал о том как связать выборку отелей по цене типу и рейтингу исходя
+      из классов отелей -->
+        <p id="type-hotel">ГОСТИНИЦА</p>
+        <p id="value-hotel">ОТ 3500 Р.</p>
+        <a class="btn" href="#">ПОДРОБНЕЕ</a>
+        <a class="btn" href="#">ЗАБРОНИРОВАТЬ</a>
+      </article>
+      <hr>
+      <article class="hotel-2">
+        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+        <h3>DESERT QUAIL INN</h3>
+        <p id="type-motel">МОТЕЛЬ</p>
+        <p id="value-hotel">ОТ 2000 Р.</p>
+        <a class="btn" href="#">ПОДРОБНЕЕ</a>
+        <a class="btn" href="#">ЗАБРОНИРОВАТЬ</a>
+      </article>
+      <hr>
+      <article class="hotel-3">
+        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+        <h3>VILLAS AT POCO DIABLO</h3>
+        <p id="type-appartments">АПАРТАМЕНТЫ</p>
+        <p id="value-hotel">ОТ 4000 Р.</p>
+        <a class="btn" href="#">ПОДРОБНЕЕ</a>
+        <a class="btn" href="#">ЗАБРОНИРОВАТЬ</a>
+      </article>
+      <hr>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <sectionc class="footer-rewiews">
+          <a href="#">#SEDONA</a>
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-tv" href="#">Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+        </section>
+        <section class="footer-copyright">
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
