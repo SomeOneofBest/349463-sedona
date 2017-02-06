@@ -16,6 +16,12 @@ body {
     background-size: 100%;
 
 }
+h1,h2 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+}
 
 .wrapper {
     width: 100%;
@@ -23,7 +29,7 @@ body {
 }
 
 .header {
-    min-height: 56px;
+    min-height: 70px;
     margin-top: 0;
     margin-left: 40px;
     margin-right: 40px;
@@ -79,7 +85,7 @@ body {
     opacity: 0.7;
     background: url("../img/background-promo.jpg") no-repeat top left;
     background-size: 100%;
-    margin-top: -83px;
+    margin-top: -96px;
     margin-right: 39px;
     margin-left: 40px;
     min-height: 800px;
@@ -88,4 +94,13 @@ body {
 
 .promo img {
     margin: 159px 371px 80px;
+}
+.reasons {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: inline-block;
+}
+.reasons-header {
+    background-color: white;
+
 }
