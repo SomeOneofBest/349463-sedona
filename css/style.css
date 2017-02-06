@@ -1,59 +1,91 @@
-/* Позиционирование
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
 
-Блочная модель
-    display: block;
-    float: right;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-
-Типографика
-    font: normal 13px/1.5 "Arial", sans-serif;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 1.5;
-    font-family: "Arial", sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
-
-Оформление
-    background-color: #f5f5f5;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-    opacity: 1;
-
-Анимация
-    transition: color 1s;
-
-Разное
-    will-change: auto;      */
-body {
-    padding: 0;
+html, body {
     margin: 0;
+    padding: 0;
     font-size: 14px;
-    font-family: 'PT Sans Regular', sans-serif;
     font-weight: 700;
-    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 21px;
     text-transform: uppercase;
     color: black;
-}
-
-h1 {
-    font-size: 21px;
-    line-height: 26px;
 
 }
 
-h2 {
-    font-size: 21px;
-    line-height: 21px;
+body {
+    background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 100% 0;
+    background-size: 100%;
 
+}
+
+.wrapper {
+    width: 100%;
+    margin-top: 0;
+}
+
+.header {
+    min-height: 56px;
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: aquamarine;
+    opacity: 0.5;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-menu {
+    display: inline-block;
+}
+
+.menu-list {
+    padding: 0;
+    font-size: 0;
+}
+
+.menu-list li {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu-list li:nth-child(2) {
+    margin-right: 240px;
+}
+
+.menu-list a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 56px;
+    padding: 17px 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.logo {
+    left: 50%;
+    top: 0;
+    display: block;
+    position: absolute;
+    transform: translatex(-50%);
+}
+
+.promo {
+    opacity: 0.7;
+    background: url("../img/background-promo.jpg") no-repeat top left;
+    background-size: 100%;
+    margin-top: -83px;
+    margin-right: 39px;
+    margin-left: 40px;
+    min-height: 800px;
+    position: relative;
+}
+
+.promo img {
+    margin: 159px 371px 80px;
 }
