@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -25,74 +26,76 @@
         <img src="img/group-logo.png" alt="sedona" width="458" height="352">
     </div>
 
-    <article class="reasons">
-        <header class="reasons-header">
-            <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <article class="reason">
+        <header class="reason-header">
+            <h1>cедона - небольшой городок в аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
         <!-- 1 -->
-        <div class="reasons-row">
+        <div class="reason-row">
             <div class="reason-blue">
                 <h2 class="reason-title">Настоящий городок</h2>
                 <div class="reason-number">№1</div>
-                <p class="reasons-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <p class="reason-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="reasons-pictures">
-                <img src="http://placehold.it/150x100" alt="" height="600" width="800">
+            <div class="reason-pictures">
+                <img src="img/photo-1.jpg" height="257" width="800">
             </div>
         </div>
         <!-- 2 -->
-        <div class="resons-row-icon">
+        <div class="reason-icon clearfix">
             <div class="reason-icon-home">
                 <h2 class="reason-title">Жильё</h2>
-                <p class="reasons-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="reason-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
 
             <div class="reason-icon-food">
                 <h2 class="reason-title">Еда</h2>
-                <p class="reasons-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                <p class="reason-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
 
             <div class="reason-icon-gift">
                 <h2 class="reason-title">Сувениры</h2>
-                <p class="reasons-text">Не только китайского, но и местного производства!</p>
+                <p class="reason-text">Не только китайского, но и местного производства!</p>
             </div>
         </div>
         <!-- 3 -->
-        <div class="reasons-row-invert">
-            <div class="reasons-pictures">
-                <img src="http://placehold.it/150x100" alt="" height="600" width="800">
+        <div class="reason-invert">
+            <div class="reason-pictures-invert">
+                <img src="http://placehold.it/150x100" height="257" width="800">
             </div>
             <div class="reason-blue-invert">
                 <h2 class="reason-title">Там есть мост дьявола</h2>
                 <div class="reason-number">№2</div>
-                <p class="reasons-text">Да по нему можно пройти! Если Вы конечно осмелитесь!</p>
+                <p class="reason-text">Да, по нему можно пройти! Если конечно Вы осмелитесь!</p>
             </div>
         </div>
         <!-- 4 -->
-        <div class="reasons-row-gray">
-            <div class="reason-gray">
+        <div class="reason-gray clearfix">
+            <div class="reason-gray-option">
                 <h2 class="reason-title">Небольшая площадь</h2>
                 <div class="reason-number">№3</div>
-                <p class="reasons-text">Все достопримечательности находятся очень близко </p>
+                <p class="reason-text">Все достопримечательности находятся очень близко </p>
             </div>
-            <div class="reason-gray">
+            <div class="reason-gray-option">
                 <h2 class="reason-title">Красивая дорога</h2>
                 <div class="reason-number">№4</div>
-                <p class="reasons-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-            <div class="reason-gray">
+            <div class="reason-gray-option">
                 <h2 class="reason-title">Мало туристов</h2>
                 <div class="reason-number">№5</div>
-                <p class="reasons-text">Большинство едет в Гранд-Каньон и толпится там!</p>
+                <p class="reason-text">Большинство едет в Гранд-Каньон и толпится там!</p>
             </div>
         </div>
     </article>
 
-    <div class="search-form">
+    <div class="search-form-header">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предпологаемые даты поездки, и мы покажем лучшие предложения гостиниц в седоне</p>
-        <a href="#">Поиск гостинницы в Седоне</a>
+        <p>Укажите предпологаемые даты поездки,<br> и мы покажем лучшие предложения гостиниц в седоне</p>
+        <div class="search-form-link">
+            <a  href="#">Поиск гостинницы в Седоне</a>
+        </div>
     </div>
 
     <div class="map">

@@ -16,23 +16,25 @@ body {
     background-size: 100%;
 
 }
-h1,h2 {
+
+h1 {
     font-size: 21px;
-    font-weight: bold;
     line-height: 26px;
-    text-align: center;
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 21px;
 }
 
 .wrapper {
-    width: 100%;
-    margin-top: 0;
+    width: 1200px;
+    margin: 0 auto;
 }
 
+                                            /* Хедер для index.html*/
 .header {
     min-height: 70px;
-    margin-top: 0;
-    margin-left: 40px;
-    margin-right: 40px;
     background-color: aquamarine;
     opacity: 0.5;
 }
@@ -73,6 +75,7 @@ h1,h2 {
     font-size: 14px;
 }
 
+                                                    /* Промоблок с логотипом*/
 .logo {
     left: 50%;
     top: 0;
@@ -82,25 +85,187 @@ h1,h2 {
 }
 
 .promo {
+    min-height: 435px;
     opacity: 0.7;
-    background: url("../img/background-promo.jpg") no-repeat top left;
-    background-size: 100%;
-    margin-top: -96px;
-    margin-right: 39px;
-    margin-left: 40px;
-    min-height: 800px;
-    position: relative;
+    padding-top: 62px;
+    background: url("../img/background-promo.jpg") no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 .promo img {
-    margin: 159px 371px 80px;
+    margin: 0 371px;
 }
-.reasons {
-    margin-left: 40px;
-    margin-right: 40px;
+
+                                        /* Преимущества хедер   1 строка*/
+.reason {
+    width: 1200px;
+    min-height: 257px;
+}
+
+.reason-header {
+    opacity: 0.5;
+    background-color: white;
+    min-height: 141px;
+    text-align: center;
+}
+
+.reason-header h1 {
+    margin: 57px 352px 31px;
+    text-align: center;
+}
+
+.reason-row {
+    width: 1200px;
+    min-height: 257px;
+}
+
+.reason-blue {
+    opacity: 0.5;
+    padding-top: 39px;
+    padding-bottom: 38px;
+    width: 400px;
+    float: left;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.reason-title {
+    padding: 0 138px 0 138px;
+}
+
+.reason-number {
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.reason-blue .reason-text {
+    margin-top: 14px;
+    margin-right: 59px;
+    margin-left: 50px;
+}
+
+.reason-pictures {
+    width: 800px;
+    float: right;
+}
+
+.reason-pictures img {
+    border-style: none;
+    vertical-align: bottom;
+}
+
+                                                    /* Преимущества 2 строка*/
+.reason-icon {
+    width: 1200px;
+    min-height: 330px;
+    text-align: center;
+    background-color: yellow;
+    opacity: 0.5;
     display: inline-block;
 }
-.reasons-header {
-    background-color: white;
 
+.reason-icon-food {
+    float: left;
+    width: 400px;
+    padding-top: 143px;
+
+}
+
+.reason-icon-home {
+    float: left;
+    width: 400px;
+    padding-top: 143px;
+
+}
+
+.reason-icon-gift {
+    float: right;
+    width: 400px;
+    padding-top: 143px;
+
+}
+
+.reason-icon .reason-text {
+    padding-top: 7px;
+    margin-right: 58px;
+    margin-left: 57px;
+}
+
+                                                        /* Преимущества 3 строка*/
+.reason-invert {
+    width: 1200px;
+    min-height: 257px;
+}
+
+.reason-blue-invert {
+    padding-top: 38px;
+    padding-bottom: 10px;
+    width: 400px;
+    float: right;
+    text-align: center;
+    background-color: cornflowerblue;
+    opacity: 0.5;
+}
+
+.reason-blue-invert .reason-title {
+    padding: 0 125px 0 125px;
+}
+
+.reason-blue-invert .reason-text {
+    margin-left: 42px;
+    margin-right: 42px;
+}
+
+.reason-pictures-invert {
+    width: 800px;
+    min-height: 257px;
+    float: left;
+    font-size: 0;
+}
+
+.reason-pictures img {
+    border-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+                                                    /* преимущества 4 строка */
+.reason-gray {
+    width: 1200px;
+    min-height: 260px;
+    text-align: center;
+    background-color: yellow;
+    opacity: 0.3;
+    display: inline-block;
+}
+.reason-gray-option {
+    float: left;
+    min-height: 260px;
+    width: 400px;
+}
+                                                    /* Хедер Формы поиска*/
+.search-form-header {
+    background-color: salmon;
+    opacity: 0.5;
+    width: 1200px;
+    min-height: 291px;
+    text-align: center;
+}
+.search-form-header h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+.search-form-header p {
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-top: 35px;
+}
+.search-form-link {
+    position: absolute;
+    width: 570px;
+    min-height: 86px;
+    background-color: chocolate;
+    opacity: 0.5;
+    
 }
