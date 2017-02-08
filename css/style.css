@@ -260,6 +260,7 @@ h2 {
     padding-left: 300px;
     padding-right: 300px;
     margin-top: 35px;
+    margin-bottom: 30px;
 }
 .search-form-link {
     position: absolute;
@@ -267,5 +268,62 @@ h2 {
     min-height: 86px;
     background-color: chocolate;
     opacity: 0.5;
-    
+    margin-right: 316px;
+    margin-left: 316px;
+}
+.search-form-link a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 56px;
+    padding: 17px 0 15px;
+    text-decoration: none;
+    font-size: 21px;}
+                                                        /* карта*/
+.map {
+    width: 1200px;
+    min-height: 593px;
+    background: url("../img/map.jpg") no-repeat;
+    opacity: 0.3;
+}
+                                                        /* Футер*/
+.main-footer {
+    width: 1200px;
+    background-color: azure;
+    opacity: 0.5;
+    color: black;
+}
+.container {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.column {
+    display: inline-block;
+    bottom: 0;
+    font-size: 16px;
+}
+.footer-reviews {
+    line-height: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 130px;
+    margin-right: 261px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.footer-social {
+    margin-left: 40px;
+    margin-right: 213px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.copyright {
+    font-size: 14px;
+}
+.copyright span {
+    vertical-align: middle;
+}
+.copyright img {
+    vertical-align: middle;
 }
