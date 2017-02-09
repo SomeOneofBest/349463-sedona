@@ -153,6 +153,71 @@ h2 {
     display: inline-block;
     vertical-align: middle;
 }
+/*--------------------------------------------Найденные отели---------------------------------------------------------*/
+
+.hotel {
+    margin: 0 auto;
+    min-height: 152px;
+    padding: 30px 70px 30px 73px;
+    border-top: 2px solid whitesmoke;
+}
+.hotel-picture {
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+.hotel-content {
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.hotel-content-name {
+    font-size: 21px;
+    text-decoration: none;
+    line-height: 26px;
+}
+.hotel-rate {
+    float: right;
+    padding-top: 28px;
+    padding-bottom: 30px;
+}
+.hotel-block-type,.hotel-block-btn {
+    display: block;
+
+}
+.hotel-block-type {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.hotel-block-type span {
+    padding-right: 35px;
+}
+.btn-blue {
+    width: 110px;
+    min-height: 27px;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+}
+.btn-brown {
+    width: 110px;
+    min-height: 27px;
+    text-decoration: none;
+    background-color: chocolate;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+
+}
 /*--------------------------------------------Промоблок с логотипом---------------------------------------------------*/
 .promo {
     min-height: 505px;
