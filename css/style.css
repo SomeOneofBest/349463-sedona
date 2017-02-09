@@ -11,11 +11,11 @@ html, body {
 
 }
 
-body {
-    background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 100% 0;
-    background-size: 100%;
+/*body {*/
+    /*background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 100% 0;*/
+    /*background-size: 100%;*/
 
-}
+/*}*/
 
 h1 {
     font-size: 21px;
@@ -34,48 +34,37 @@ h2 {
 
                                             /* Хедер для index.html*/
 .header {
-    min-height: 70px;
     background-color: aquamarine;
     opacity: 0.5;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.header-menu {
-    display: inline-block;
-}
-
 .menu-list {
-    padding: 0;
+    margin: 0;
+    padding-left: 72px;
+    padding-right: 72px;
     font-size: 0;
 }
 
 .menu-list li {
-    display: inline-block;
     width: 240px;
-    text-align: center;
-    vertical-align: middle;
 }
-
+.right {
+    float: right;
+    text-align: right;
+}
+.left {
+    float: left;
+}
 .menu-list li:nth-child(2) {
-    margin-right: 240px;
+    margin-right: 96px;
 }
 
 .menu-list a {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 56px;
-    padding: 17px 0 15px;
     text-decoration: none;
     font-size: 14px;
 }
 
-                                                    /* Промоблок с логотипом*/
+
 .logo {
     left: 50%;
     top: 0;
@@ -83,11 +72,11 @@ h2 {
     position: absolute;
     transform: translatex(-50%);
 }
-
+                                                /* Промоблок с логотипом*/
 .promo {
-    min-height: 435px;
+    min-height: 505px;
     opacity: 0.7;
-    padding-top: 62px;
+    padding-top: 132px;
     background: url("../img/background-promo.jpg") no-repeat;
     background-size: cover;
     display: block;
@@ -95,29 +84,32 @@ h2 {
 }
 
 .promo img {
-    margin: 0 371px;
+    margin: 0 auto;
+    display: block;
 }
 
-                                        /* Преимущества хедер   1 строка*/
+                                        /* Преимущества хедер и 1 строка и Преимущества 3 строка**/
 .reason {
     width: 1200px;
     min-height: 257px;
 }
 
 .reason-header {
+    padding-top: 57px;
+    padding-bottom: 58px;
     opacity: 0.5;
     background-color: white;
-    min-height: 141px;
     text-align: center;
+
 }
 
 .reason-header h1 {
-    margin: 57px 352px 31px;
+    width: 480px;
+    margin: 0 auto;
     text-align: center;
 }
 
 .reason-row {
-    width: 1200px;
     min-height: 257px;
 }
 
@@ -146,11 +138,6 @@ h2 {
     margin-left: 50px;
 }
 
-.reason-pictures {
-    width: 800px;
-    float: right;
-}
-
 .reason-pictures img {
     border-style: none;
     vertical-align: bottom;
@@ -158,18 +145,17 @@ h2 {
 
                                                     /* Преимущества 2 строка*/
 .reason-icon {
-    width: 1200px;
-    min-height: 330px;
+    min-height: 332px;
     text-align: center;
     background-color: yellow;
     opacity: 0.5;
-    display: inline-block;
 }
 
 .reason-icon-food {
     float: left;
     width: 400px;
     padding-top: 143px;
+    display: inline;
 
 }
 
@@ -177,6 +163,7 @@ h2 {
     float: left;
     width: 400px;
     padding-top: 143px;
+    display: inline;
 
 }
 
@@ -184,7 +171,7 @@ h2 {
     float: right;
     width: 400px;
     padding-top: 143px;
-
+    display: inline;
 }
 
 .reason-icon .reason-text {
@@ -192,93 +179,51 @@ h2 {
     margin-right: 58px;
     margin-left: 57px;
 }
-
-                                                        /* Преимущества 3 строка*/
-.reason-invert {
-    width: 1200px;
-    min-height: 257px;
-}
-
-.reason-blue-invert {
-    padding-top: 38px;
-    padding-bottom: 10px;
-    width: 400px;
-    float: right;
-    text-align: center;
-    background-color: cornflowerblue;
-    opacity: 0.5;
-}
-
-.reason-blue-invert .reason-title {
-    padding: 0 125px 0 125px;
-}
-
-.reason-blue-invert .reason-text {
-    margin-left: 42px;
-    margin-right: 42px;
-}
-
-.reason-pictures-invert {
-    width: 800px;
-    min-height: 257px;
-    float: left;
-    font-size: 0;
-}
-
-.reason-pictures img {
-    border-style: none;
-    display: inline-block;
-    vertical-align: middle;
-}
                                                     /* преимущества 4 строка */
 .reason-gray {
-    width: 1200px;
-    min-height: 260px;
     text-align: center;
     background-color: yellow;
     opacity: 0.3;
-    display: inline-block;
+    display: block;
 }
 .reason-gray-option {
     float: left;
-    min-height: 260px;
     width: 400px;
 }
                                                     /* Хедер Формы поиска*/
-.search-form-header {
-    background-color: salmon;
-    opacity: 0.5;
-    width: 1200px;
-    min-height: 291px;
-    text-align: center;
-}
-.search-form-header h2 {
-    font-size: 30px;
-    line-height: 24px;
-}
-.search-form-header p {
-    padding-left: 300px;
-    padding-right: 300px;
-    margin-top: 35px;
-    margin-bottom: 30px;
-}
-.search-form-link {
-    position: absolute;
-    width: 570px;
-    min-height: 86px;
-    background-color: chocolate;
-    opacity: 0.5;
-    margin-right: 316px;
-    margin-left: 316px;
-}
-.search-form-link a {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 56px;
-    padding: 17px 0 15px;
-    text-decoration: none;
-    font-size: 21px;}
+/*.search-form-header {*/
+    /*background-color: salmon;*/
+    /*opacity: 0.5;*/
+    /*min-height: 291px;*/
+    /*text-align: center;*/
+/*}*/
+/*.search-form-header h2 {*/
+    /*font-size: 30px;*/
+    /*line-height: 24px;*/
+/*}*/
+/*.search-form-header p {*/
+    /*padding-left: 300px;*/
+    /*padding-right: 300px;*/
+    /*margin-top: 35px;*/
+    /*margin-bottom: 30px;*/
+/*}*/
+/*.search-form-link {*/
+    /*position: absolute;*/
+    /*width: 570px;*/
+    /*min-height: 86px;*/
+    /*background-color: chocolate;*/
+    /*opacity: 0.5;*/
+    /*margin-right: 316px;*/
+    /*margin-left: 316px;*/
+/*}*/
+/*.search-form-link a {*/
+    /*display: inline-block;*/
+    /*box-sizing: border-box;*/
+    /*width: 100%;*/
+    /*min-height: 56px;*/
+    /*padding: 17px 0 15px;*/
+    /*text-decoration: none;*/
+    /*font-size: 21px;}*/
                                                         /* карта*/
 .map {
     width: 1200px;
@@ -288,7 +233,6 @@ h2 {
 }
                                                         /* Футер*/
 .main-footer {
-    width: 1200px;
     background-color: azure;
     opacity: 0.5;
     color: black;
