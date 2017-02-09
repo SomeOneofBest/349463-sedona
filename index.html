@@ -36,7 +36,7 @@
             <div class="reason-blue">
                 <h2 class="reason-title">Настоящий городок</h2>
                 <div class="reason-number">№1</div>
-                <p class="reason-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <p class="reason-text">Седона - не аттракцион для туристов, там течет своя жизнь!</p>
             </div>
             <div class="reason-pictures">
                 <img src="img/photo-1.jpg" height="257" width="800">
@@ -44,30 +44,31 @@
         </div>
         <!-- 2 -->
         <div class="reason-icon clearfix">
-            <div class="reason-icon-home">
+            <div class="reason-icon-name">
                 <h2 class="reason-title">Жильё</h2>
                 <p class="reason-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
 
-            <div class="reason-icon-food">
+            <div class="reason-icon-name">
                 <h2 class="reason-title">Еда</h2>
                 <p class="reason-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
 
-            <div class="reason-icon-gift">
+            <div class="reason-icon-name">
                 <h2 class="reason-title">Сувениры</h2>
                 <p class="reason-text">Не только китайского, но и местного производства!</p>
             </div>
         </div>
         <!-- 3 -->
         <div class="reason-row">
-            <div class="reason-pictures">
-                <img src="img/photo-2.jpg" height="257" width="800">
-            </div>
-            <div class="reason-blue">
+
+            <div class="reason-blue invert">
                 <h2 class="reason-title">Там есть мост дьявола</h2>
                 <div class="reason-number">№2</div>
                 <p class="reason-text">Да, по нему можно пройти! Если конечно Вы осмелитесь!</p>
+            </div>
+            <div class="reason-pictures">
+                <img src="img/photo-2.jpg" height="257" width="800">
             </div>
         </div>
         <!-- 4 -->
@@ -91,7 +92,7 @@
     </article>
 
     <div class="search-form-header">
-        <h2>Заинтересовались?</h2>
+        <h2 class="call-to-action">Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки,<br> и мы покажем лучшие предложения гостиниц в седоне</p>
         <div class="search-form-link">
             <a  href="#">Поиск гостинницы в Седоне</a>
@@ -101,39 +102,39 @@
     <div class="map">
         <div class="map-canvas">Интерактивная карта</div>
 
-        <div class="search-form">
+        <div class="search-form clearfix">
             <form action="" method="get">
                 <div class="search-form-row">
                     <label class="search-form-label" for="from">Дата Заезда:</label>
-                    <input class="search-form-field" type="text" id="from">
+                    <input class="search-form-field" type="text" id="from" placeholder="24 апреля 2016">
                     <button type="button" class="search-form-calendar">Календарь</button>
                 </div>
 
                 <div class="search-form-row">
                     <label class="search-form-label" for="to">Дата Выезда:</label>
-                    <input class="search-form-field" type="text" id="to">
+                    <input class="search-form-field" type="text" id="to" placeholder="4 июля 2016">
                     <button type="button" class="search-form-calendar">Календарь</button>
                 </div>
 
                 <div class="search-form-row">
                     <div class="search-form-col">
-                        <label for="number1" class="search-form-label">Взрослые:</label>
+                        <label for="number1" class="form-left-label">Взрослые:</label>
                         <div class="number">
                             <button class="number-btn-minus">Минус</button>
-                            <input class="search-form-field" type="text" id="number1">
+                            <input class="form-right-field" type="text" id="number1" placeholder="2">
                             <button class="number-btn-plus">Плюс</button>
                         </div>
                     </div>
                     <div class="search-form-col">
-                        <label for="number2" class="search-form-label">Дети:</label>
+                        <label for="number2" class="form-left-label">Дети:</label>
                         <div class="number">
                             <button class="number-btn-minus">Минус</button>
-                            <input class="search-form-field" type="text" id="number2">
+                            <input class="form-right-field" type="text" id="number2" placeholder="0">
                             <button class="number-btn-plus">Плюс</button>
                         </div>
                     </div>
                 </div>
-                <button class="search-form" type="submit">Найти</button>
+                <button class="search-form-btn" type="submit">Найти</button>
             </form>
         </div>
     </div>
