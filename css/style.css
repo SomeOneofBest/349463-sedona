@@ -53,6 +53,8 @@ h2 {
 
 .menu-list li {
     width: 240px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .right {
@@ -81,15 +83,55 @@ h2 {
     transform: translatex(-50%);
 }
 
+/*-------------------------------------Форма выбора отеля (sedona-hotels.html)----------------------------------------*/
+
+.options-form {
+    min-height: 218px;
+    opacity: 0.7;
+    margin: 0 auto;
+    /*padding: 30px 72px;*/
+    background: url("../img/background-hotel.jpg") no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+.filter-form-left{
+    width: 150px;
+    border: none;
+    float: left;
+    padding-left: 67px;
+}
+.filter-form-right{
+    width: 330px;
+    border: none;
+    float: right;
+    text-align: left;
+    padding-right: 70px;
+}
+
+.filter-form-left label {
+    line-height: 35px;
+}
+.btn-transparent {
+    width: 137px;
+    height: 35px;
+    margin: 25px 96px;
+}
+/*-------------------------------------Форма c найденными отелями (sedona-hotels.html)----------------------------------------*/
+
+
+
+
 /*--------------------------------------------Промоблок с логотипом---------------------------------------------------*/
 .promo {
     min-height: 505px;
     opacity: 0.7;
+    margin: 0 auto;
     padding-top: 132px;
     background: url("../img/background-promo.jpg") no-repeat;
     background-size: cover;
     display: block;
-    margin: 0 auto;
+
 }
 
 .promo img {
@@ -230,6 +272,7 @@ h2 {
     font-size: 21px;
     color: white;
 }
+
 /*---------------------------------------------------------Карта------------------------------------------------------*/
 .map {
     width: 1200px;
@@ -237,6 +280,7 @@ h2 {
     background: url("../img/map.jpg") no-repeat;
     opacity: 0.3;
 }
+
 /*------------------------------------------------------Форма поиска--------------------------------------------------*/
 
 .search-form {
@@ -246,14 +290,17 @@ h2 {
     color: black;
     padding: 55px;
 }
+
 .search-form-row {
 
 }
+
 .search-form-label {
     font-weight: bold;
     float: left;
 }
-.search-form-field  {
+
+.search-form-field {
     float: right;
     width: 345px;
     padding-left: 10px;
@@ -263,19 +310,24 @@ h2 {
     line-height: 36px;
     background-color: silver;
 }
+
 .search-form-col {
     width: 230px;
 }
+
 .form-left-label {
     float: left;
 }
+
 .form-right-field {
     float: right;
 }
+
 .search-form-btn {
     width: 458px;
     height: 58px;
 }
+
 /* ------------------------------------------------------Футер--------------------------------------------------------*/
 .main-footer {
     background-color: azure;
