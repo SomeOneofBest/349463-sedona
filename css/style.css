@@ -89,19 +89,20 @@ h2 {
     min-height: 218px;
     opacity: 0.7;
     margin: 0 auto;
-    /*padding: 30px 72px;*/
+    padding: 30px 72px;
     background: url("../img/background-hotel.jpg") no-repeat;
     background-size: 100%;
     display: block;
 }
 
-.filter-form-left{
+.filter-form-left {
     width: 150px;
     border: none;
     float: left;
-    padding-left: 67px;
+    padding-left: 0;
 }
-.filter-form-right{
+
+.filter-form-right {
     width: 330px;
     border: none;
     float: right;
@@ -109,25 +110,32 @@ h2 {
     padding-right: 70px;
 }
 
-.filter-form-left label {
-    line-height: 35px;
-}
+/*.filter-form-left label {*/
+/*line-height: 35px;*/
+/*}*/
 .btn-transparent {
     width: 137px;
     height: 35px;
     margin: 25px 96px;
 }
+
+.options-hotel input[type="checkbox"] + label {
+    display: block;
+}
+
 /*-------------------------------------Форма c найденными отелями (sedona-hotels.html)--------------------------------*/
 
 .search-inform {
     margin: 0 auto;
     padding: 30px 70px 22px 73px;
 }
+
 .hotel-sort-item {
     display: inline-block;
     vertical-align: top;
     margin-right: 30px;
 }
+
 .search-title {
     display: inline-block;
     padding-top: 30px;
@@ -137,22 +145,28 @@ h2 {
     line-height: 26px;
     font-weight: bold;
 }
+
 .hotel-sort {
     display: inline-block;
-    padding-right: 200px;
+    padding-right: 290px;
+    font-size: 12px;
 }
+
 .hotel-sort p {
     display: inline-block;
     padding-right: 37px;
 }
+
 .hotel-sort ul {
     display: inline-block;
     padding-right: 30px;
 }
+
 .hotel-cursor {
     display: inline-block;
     vertical-align: middle;
 }
+
 /*--------------------------------------------Найденные отели---------------------------------------------------------*/
 
 .hotel {
@@ -161,63 +175,66 @@ h2 {
     padding: 30px 70px 30px 73px;
     border-top: 2px solid whitesmoke;
 }
+
 .hotel-picture {
     float: left;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 30px;
 }
+
 .hotel-content {
     float: left;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .hotel-content-name {
     font-size: 21px;
     text-decoration: none;
     line-height: 26px;
 }
+
 .hotel-rate {
     float: right;
     padding-top: 28px;
     padding-bottom: 30px;
 }
-.hotel-block-type,.hotel-block-btn {
+
+.hotel-block-type, .hotel-block-btn {
     display: block;
 
 }
+
 .hotel-block-type {
     padding-top: 15px;
     padding-bottom: 10px;
 }
+
 .hotel-block-type span {
     padding-right: 35px;
 }
+
 .btn-blue {
     width: 110px;
     min-height: 27px;
+    margin-right: 5px;
+    padding: 0 15px 0 15px;
     text-decoration: none;
     background-color: cornflowerblue;
     color: white;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: bold;
-    text-align: center;
-    margin-right: 10px;
 }
+
 .btn-brown {
     width: 110px;
     min-height: 27px;
+    margin-right: 10px;
+    padding: 0 15px 0 15px;
     text-decoration: none;
     background-color: chocolate;
     color: white;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: bold;
-    text-align: center;
-    margin-right: 10px;
-
 }
+
 /*--------------------------------------------Промоблок с логотипом---------------------------------------------------*/
 .promo {
     min-height: 505px;
@@ -429,9 +446,6 @@ h2 {
     background-color: azure;
     opacity: 0.5;
     color: black;
-}
-
-.container {
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
