@@ -11,11 +11,11 @@ html, body {
 
 }
 
-/*body {*/
-/*background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 100% 0;*/
-/*background-size: 100%;*/
+body {
+background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 100% 0;
+background-size: 100%;
 
-/*}*/
+}
 
 h1 {
     font-size: 21px;
@@ -40,9 +40,10 @@ h2 {
 
 /*--------------------------------------------------- Хедер для index.html-------------------------------------------*/
 .header {
+    position: relative;
     background-color: aquamarine;
     opacity: 0.5;
-    position: relative;
+    z-index: 4;
 }
 
 .menu-list {
@@ -237,10 +238,12 @@ h2 {
 .promo {
     min-height: 505px;
     opacity: 0.7;
-    margin: 0 auto;
-    padding-top: 132px;
+    padding-top: 158px;
     background: url("../img/background-promo.jpg") no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin: -82px auto 0;
 }
 
 .promo img {
@@ -273,7 +276,6 @@ h2 {
     padding-top: 47px;
     padding-bottom: 48px;
     width: 400px;
-    float: left;
     text-align: center;
     background-color: cornflowerblue;
 }
@@ -454,8 +456,6 @@ h2 {
     margin-left: -5px;
     text-align: center;
     font-size: 16px;
-
-
 }
 
 .footer-reviews {
@@ -463,8 +463,6 @@ h2 {
     font-weight: bold;
     text-decoration: none;
 }
-
-
 
 .copyright {
     font-size: 14px;
