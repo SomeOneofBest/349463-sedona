@@ -11,20 +11,18 @@
     <header class="header">
         <nav class="header-menu">
             <ul class="menu-list clearfix">
-                <li class="menu-item left"><a href="#">Информация</a></li>
-                <li class="menu-item left"><a href="#">Фото и видео</a></li>
-                <li class="menu-item right"><a href="#">Карта штата</a></li>
-                <li class="menu-item right"><a href="#">Гостинницы</a></li>
+                <li class="menu-item left"><a href="#">информация</a></li>
+                <li class="menu-item left"><a href="#">фото и видео</a></li>
+                <li class="menu-item-2 right"><a href="sedona-hotels.html">гостиницы</a></li>
+                <li class="menu-item-2 right"><a href="#">карта штата</a></li>
             </ul>
         </nav>
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo-item.png" alt="" width="138" height="70">
-            </a>
-        </div>
+        <a class="logo">
+            <img src="img/logo-item.png" alt="" width="138" height="70">
+        </a>
     </header>
 
-    <div class="options-form">
+    <div class="options-form clearfix">
         <form action="" class="options-hotel" method="get">
             <fieldset class="filter-form-left">
                 <legend>Инфрастуктура:</legend>
@@ -59,8 +57,8 @@
                     <div class="range-to"></div>
                     <div class="range-scale">Шкала</div>
 
-                    <button class="range-btn-from" type="button">От</button>
-                    <button class="range-btn-to" type="button">До</button>
+                    <button class="range-btn-from" type="button">От 0</button>
+                    <button class="range-btn-to" type="button">До 3000</button>
                 </div>
                 <button class="btn-transparent" type="submit">Показать</button>
             </fieldset>
@@ -78,10 +76,10 @@
         </div>
         <div class="hotel-cursor">
             <a href="#" class="hotel-sort-link">
-                <img src="#" alt="" width="50" height="50">
+
             </a>
             <a href="#" class="hotel-sort-link">
-                <img src="#" alt="" width="50" height="50">
+
             </a>
         </div>
     </div>
@@ -94,10 +92,10 @@
             <a class="hotel-content-name" href="#">Amara resort & spa</a>
             <div class="hotel-block-type">
                 <span>Гостиница</span>
-                <span>От 4000р.</span>
+                <a class="btn-blue" href="">Подробнее</a>
             </div>
             <div class="hotel-block-btn">
-                <a class="btn-blue" href=""><span>Подробнее</span></a>
+                <span>От 4000р.</span>
                 <a class="btn-brown" href="">Забронировать</a>
             </div>
         </div>
@@ -107,7 +105,7 @@
         </div>
     </article>
     <!-- 2й отель-->
-    <article class="hotel">
+    <article class="hotel clearfix">
         <div class="hotel-picture">
             <img src="img/desert-quail.png" alt="" width="135" height="90">
         </div>
@@ -115,10 +113,10 @@
             <a class="hotel-content-name" href="#">Desert Quail inn</a>
             <div class="hotel-block-type">
                 <span>Мотель</span>
-                <span>От 3000р.</span>
+                <a class="btn-blue" href="">Подробнее</a>
             </div>
             <div class="hotel-block-btn">
-                <a class="btn-blue" href="">Подробнее</a>
+                <span>От 3000р.</span>
                 <a class="btn-brown" href="">Забронировать</a>
             </div>
         </div>
@@ -128,7 +126,7 @@
         </div>
     </article>
     <!-- 3й отель -->
-    <article class="hotel">
+    <article class="hotel clearfix">
         <div class="hotel-picture">
             <img src="img/poco-diablo.png" alt="" width="135" height="90">
         </div>
@@ -136,10 +134,10 @@
             <a class="hotel-content-name" href="#">Villas at poco diablo</a>
             <div class="hotel-block-type">
                 <span>Апартаменты</span>
-                <span>От 2000р.</span>
+                <a class="btn-blue" href="">Подробнее</a>
             </div>
             <div class="hotel-block-btn">
-                <a class="btn-blue" href="">Подробнее</a>
+                <span>От 2000р.</span>
                 <a class="btn-brown" href="">Забронировать</a>
             </div>
         </div>
@@ -149,23 +147,21 @@
         </div>
     </article>
 
-    <footer class="main-footer">
-        <div class="container">
-            <section class="footer-reviews column">
-                <a href="#">#visitsedona</a>
-            </section>
-            <section class="footer-social column">
-                <a class="social-btn social-btn-tv" href="#">Твиттер</a>
-                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
-            </section>
-            <section class="copyright column">
-                <span>Website by</span>
-                <a class="btn" href="#">
-                    <img src="img/logo-htmlacademy.png" alt="" width="113" height="39">
-                </a>
-            </section>
-        </div>
+    <footer class="main-footer ">
+        <section class="footer-reviews column">
+            <a href="#">#visitsedona</a>
+        </section>
+        <section class="footer-social column">
+            <a class="social-btn social-btn-tv" href="#">Твиттер</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+        </section>
+        <section class="copyright column">
+            <span>Website by</span>
+            <a class="btn" href="#">
+                <img src="img/logo-htmlacademy.png" alt="" width="113" height="39">
+            </a>
+        </section>
     </footer>
 </div>
 </body>

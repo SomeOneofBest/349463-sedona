@@ -14,8 +14,8 @@
             <ul class="menu-list clearfix">
                 <li class="menu-item left"><a href="#">информация</a></li>
                 <li class="menu-item left"><a href="#">фото и видео</a></li>
-                <li class="menu-item right"><a href="sedona-hotels.html">гостиницы</a></li>
-                <li class="menu-item right"><a href="#">карта штата</a></li>
+                <li class="menu-item-2 right"><a href="sedona-hotels.html">гостиницы</a></li>
+                <li class="menu-item-2 right"><a href="#">карта штата</a></li>
             </ul>
         </nav>
         <a class="logo">
@@ -32,13 +32,13 @@
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
         <!-- 1 -->
-        <div class="reason-row">
-            <div class="reason-blue">
+        <div class="reason-row clearfix">
+            <div class="reason-blue left">
                 <h2 class="reason-title">Настоящий городок</h2>
                 <div class="reason-number">№1</div>
                 <p class="reason-text">Седона - не аттракцион для туристов, там течет своя жизнь!</p>
             </div>
-            <div class="reason-pictures">
+            <div class="reason-pictures right">
                 <img src="img/photo-1.jpg" height="257" width="800">
             </div>
         </div>
@@ -60,14 +60,14 @@
             </div>
         </div>
         <!-- 3 -->
-        <div class="reason-row">
+        <div class="reason-row clearfix">
 
-            <div class="reason-blue invert">
+            <div class="reason-blue right">
                 <h2 class="reason-title">Там есть мост дьявола</h2>
                 <div class="reason-number">№2</div>
                 <p class="reason-text">Да, по нему можно пройти! Если конечно Вы осмелитесь!</p>
             </div>
-            <div class="reason-pictures">
+            <div class="reason-pictures left">
                 <img src="img/photo-2.jpg" height="257" width="800">
             </div>
         </div>
@@ -94,14 +94,11 @@
     <div class="search-form-header">
         <h2 class="call-to-action">Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки,<br> и мы покажем лучшие предложения гостиниц в седоне</p>
-        <div class="search-form-link">
-            <a  href="#">Поиск гостинницы в Седоне</a>
-        </div>
+        <a  class="search-form-link" href="#">Поиск гостинницы в Седоне</a>
     </div>
 
     <div class="map">
-        <div class="map-canvas">Интерактивная карта</div>
-
+        <!--<div class="map-canvas">Интерактивная карта</div>-->
         <div class="search-form clearfix">
             <form action="" method="get">
                 <div class="search-form-row">
@@ -139,20 +136,22 @@
         </div>
     </div>
     <footer class="main-footer ">
-        <section class="footer-reviews column">
-            <a href="#">#visitsedona</a>
-        </section>
-        <section class="footer-social column">
-            <a class="social-btn social-btn-tv" href="#">Твиттер</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
-        </section>
-        <section class="copyright column">
-            <span>Website by</span>
-            <a class="btn" href="#">
-                <img src="img/logo-htmlacademy.png" alt="" width="113" height="39">
-            </a>
-        </section>
+        <div class="contacts">
+            <section class="footer-reviews column">
+                <a href="#">#visitsedona</a>
+            </section>
+            <section class="footer-social column">
+                <a class="social-btn social-btn-tv" href="#">Твиттер</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+            </section>
+            <section class="copyright column">
+                <span>Website by</span>
+                <a class="btn" href="#">
+                    <img src="img/logo-htmlacademy.png" alt="" width="113" height="39">
+                </a>
+            </section>
+        </div>
     </footer>
 </div>
 </body>
