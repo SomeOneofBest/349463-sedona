@@ -8,14 +8,15 @@ html, body {
     line-height: 21px;
     text-transform: uppercase;
     color: black;
+    background-color: #f2f2f2;
 
 }
 
-body {
-background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 100% 0;
-background-size: 100%;
+/*body {*/
+/*background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 100% 0;*/
+/*background-size: 100%;*/
 
-}
+/*}*/
 
 h1 {
     font-size: 21px;
@@ -28,8 +29,10 @@ h2 {
 }
 
 .wrapper {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.2);
 }
 
 .clearfix::after {
@@ -41,8 +44,7 @@ h2 {
 /*--------------------------------------------------- Хедер для index.html-------------------------------------------*/
 .header {
     position: relative;
-    background-color: aquamarine;
-    opacity: 0.5;
+    background-color: white;
     z-index: 4;
 }
 
@@ -70,6 +72,7 @@ h2 {
 .menu-list a {
     text-decoration: none;
     font-size: 14px;
+    color: black;
 }
 
 .menu-item-2 {
@@ -121,12 +124,46 @@ h2 {
     width: 110px;
     line-height: 32px;
 }
+input[type="checkbox"] {
+    display: none;
+}
 
+input[type="checkbox"] + label {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+    padding-left: 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../img/sprite.png) no-repeat -10px -84px;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 22px;
+    background: url(../img/sprite.png) no-repeat -52px -84px;
+}
 /*-------------------------------------Форма c найденными отелями (sedona-hotels.html)--------------------------------*/
 
 .search-inform {
     margin: 0 auto;
     padding: 30px 70px 22px 73px;
+    background-color: white;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .hotel-sort-item {
@@ -172,11 +209,8 @@ h2 {
     margin: 0 auto;
     min-height: 152px;
     padding: 0 70px 0 70px;
-    border-top: 2px solid whitesmoke;
-}
-
-.hotel:last-child {
     border-bottom: 2px solid whitesmoke;
+    background-color: white;
 }
 
 .hotel-picture {
@@ -237,7 +271,6 @@ h2 {
 /*--------------------------------------------Промоблок с логотипом---------------------------------------------------*/
 .promo {
     min-height: 505px;
-    opacity: 0.7;
     padding-top: 158px;
     background: url("../img/background-promo.jpg") no-repeat;
     background-size: cover;
@@ -254,12 +287,13 @@ h2 {
 /*------------------------- Преимущества хедер и 1 строка и Преимущества 3 строка-------------------------------------*/
 
 .reason-header {
+    position: relative;
+    margin-top: -70px;
+    z-index: 4;
     padding-top: 57px;
-    padding-bottom: 58px;
-    opacity: 0.5;
+    padding-bottom: 38px;
     background-color: white;
     text-align: center;
-
 }
 
 .reason-header h1 {
@@ -267,36 +301,40 @@ h2 {
     margin: 0 auto;
 }
 
-.reason-row {
-    min-height: 257px;
+.reason-header p {
+    padding-top: 16px;
 }
 
-.reason-blue {
-    opacity: 0.5;
-    padding-top: 47px;
+.reason-row {
+    min-height: 257px;
+    background-color: #81b3d2;
+    color: white;
+}
+
+.reason-option {
+    padding-top: 55px;
     padding-bottom: 48px;
     width: 400px;
     text-align: center;
-    background-color: cornflowerblue;
+
 }
 
 .reason-title {
     width: 150px;
-    margin: 0 auto;
+    margin: 0 auto 25px;
 }
 
 .reason-number {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-.reason-blue .reason-text {
-    width: 300px;
+ .reason-text-1 {
+     width: 302px;
     margin: 0 auto;
-    padding-top: 7px;
 }
 
 .reason-pictures {
+    width: 800px;
     overflow: hidden;
 }
 
@@ -308,42 +346,53 @@ h2 {
 /* -----------------------------------------------Преимущества 2 строка-----------------------------------------------*/
 .reason-icon {
     text-align: center;
-    background-color: yellow;
-    opacity: 0.5;
+    background-color: white;
 }
 
 .reason-icon-name {
     float: left;
     width: 400px;
     padding-top: 160px;
-    padding-bottom: 85px;
+    padding-bottom: 81px;
 }
-
-.reason-text {
-    width: 260px;
+.home {
+    background: url("../img/home.png") 50% 20% no-repeat;
+    background-size: 74px 74px;
+}
+.eat {
+    background: url("../img/food.png") 50% 20% no-repeat;
+    background-size: 70px 74px;
+}
+.gifts {
+    background: url("../img/gift.png") 50% 20% no-repeat;
+    background-size: 67px 75px;
+}
+.reason-text-2 {
+    width: 285px;
     margin: 0 auto;
 }
 
 /*------------------------------------------------Преимущества 4 строка-----------------------------------------------*/
 .reason-gray {
     text-align: center;
-    background-color: yellow;
-    opacity: 0.3;
-    padding-top: 48px;
-    padding-bottom: 62px;
+    background-color: #eeeeee;
+    padding-top: 46px;
+    padding-bottom: 60px;
 }
 
 .reason-gray-option {
     width: 400px;
     float: left;
 }
-
+.reason-text-3 {
+    width: 302px;
+    margin: 25px auto 0;
+}
 /* ----------------------------------------------Хедер Формы поиска---------------------------------------------------*/
 .search-form-header {
-    background-color: salmon;
-    opacity: 0.5;
+    background-color: white;
     text-align: center;
-    padding-top: 56px;
+    padding-top: 32px;
 }
 
 .call-to-action {
@@ -351,20 +400,22 @@ h2 {
 }
 
 .search-form-header p {
-    width: 410px;
+    padding-bottom: 47px;
+    width: 450px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    line-height: 24px;
+    padding-top: 7px;
 }
 
 .search-form-link {
     width: 570px;
     margin: 0 auto;
-    background-color: chocolate;
-    opacity: 0.5;
-    padding-top: 34px;
-    padding-bottom: 35px;
+    background-color: #766357;
+    padding-top: 32px;
+    padding-bottom: 33px;
     text-decoration: none;
     font-size: 21px;
+    font-weight: bold;
     color: white;
     display: inline-block;
 
@@ -381,19 +432,20 @@ h2 {
 .map {
     min-height: 593px;
     background: url("../img/map.jpg") no-repeat;
-    opacity: 0.3;
 }
 
 /*------------------------------------------------------Форма поиска--------------------------------------------------*/
 
 .search-form {
+    position: absolute;
+    z-index: 5;
     width: 460px;
     background-color: white;
     color: black;
     padding: 55px;
-    position: absolute;
     left: 50%;
     margin-left: -285px;
+    box-shadow: 7px 0 15px rgba(0,0,0,0.15);
 }
 
 .search-form-row {
@@ -435,33 +487,69 @@ h2 {
 
 /* ------------------------------------------------------Футер--------------------------------------------------------*/
 .main-footer {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     color: black;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-.contacts {
-    position: absolute;
     width: 100%;
-    bottom: 0;
-    background-color: azure;
-    opacity: 0.5;
+    background-color: white;
+    opacity: 0.9;
 }
+
 .column {
     display: inline-block;
     width: 400px;
     margin-bottom: 35px;
     margin-top: 35px;
-    vertical-align: top;
     margin-left: -5px;
     text-align: center;
     font-size: 16px;
+    vertical-align: middle;
 }
 
-.footer-reviews {
+.footer-reviews a {
     line-height: 26px;
     font-weight: bold;
     text-decoration: none;
+    color: black;
+    font-size: 21px;
+}
+.social-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 43px;
+    height: 43px;
+    font-size: 0;
+    background-color: #81b3d2;
+    position: relative;
+}
+.social-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url("../img/sprite.png") no-repeat;
+
+
+}
+.social-btn-tv::before {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -142px;
+}
+
+.social-btn-fb::before {
+    width: 10px;
+    height: 19px;
+    background-position: -98px -119px;
+}
+
+.social-btn-youtube::before {
+    width: 20px;
+    height: 16px;
+    background-position: -47px -142px;
 }
 
 .copyright {
@@ -474,4 +562,88 @@ h2 {
 
 .copyright img {
     vertical-align: middle;
+}
+/* ------------------------------------------------------Спрайты------------------------------------------------------*/
+
+.sprite {
+    background: url(../img/sprite.png) no-repeat;
+    display: block;
+}
+
+.sprite-2stars {
+    width: 42px;
+    height: 17px;
+    background-position: -10px -10px;
+}
+
+.sprite-3stars {
+    width: 65px;
+    height: 17px;
+    background-position: -72px -10px;
+}
+
+.sprite-5stars {
+    width: 89px;
+    height: 17px;
+    background-position: -10px -47px;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -119px -47px;
+}
+
+.sprite-checkbox {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -84px;
+}
+
+.sprite-checkbox-checked {
+    width: 26px;
+    height: 22px;
+    background-position: -52px -84px;
+}
+
+.sprite-cursorup {
+    width: 11px;
+    height: 10px;
+    background-position: -98px -89px;
+}
+
+.sprite-cursur-dawn-blue {
+    width: 11px;
+    height: 10px;
+    background-position: -129px -89px;
+}
+
+.sprite-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -98px -119px;
+}
+
+.sprite-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -128px -119px;
+}
+
+.sprite-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -157px -10px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -142px;
+}
+
+.sprite-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -47px -142px;
 }
