@@ -48,7 +48,7 @@ h2 {
     z-index: 4;
 }
 .header-menu a:hover {
-    color: #766357;
+    color: #81b3d2;
 }
 .menu-list {
     margin: 0;
@@ -93,7 +93,7 @@ h2 {
 /*-------------------------------------Форма выбора отеля (sedona-hotels.html)----------------------------------------*/
 
 .options-form {
-    padding: 32px 68px 25px;
+    padding: 30px 68px 25px;
     background: url("../img/filter-background.jpg") no-repeat;
     background-size: 100%;
     display: block;
@@ -179,6 +179,7 @@ input[type="checkbox"]:checked + label::after {
     display: inline-block;
     vertical-align: top;
     margin-right: 30px;
+
 }
 
 .search-title {
@@ -205,6 +206,15 @@ input[type="checkbox"]:checked + label::after {
 .hotel-sort ul {
     display: inline-block;
     padding-right: 30px;
+}
+.hotel-sort-link {
+    text-decoration: none;
+    color: #8b8b8b;
+    font-weight: normal;
+    border-bottom: dotted #81b3d2;
+}
+.hotel-sort-link:hover {
+    color: #81b3d2;
 }
 
 .hotel-cursor {
@@ -261,6 +271,9 @@ input[type="checkbox"]:checked + label::after {
     line-height: 26px;
     color: black;
 }
+.hotel-content-name:hover {
+    color: #81b3d2;
+}
 
 .hotel-rate {
     width: 110px;
@@ -288,14 +301,18 @@ input[type="checkbox"]:checked + label::after {
     background-color: #81b3d2;
     color: white;
 }
-
+.btn-blue:hover {
+    background-color: #669ec0;
+}
 .btn-brown {
     padding: 5px 15px 5px 15px;
     text-decoration: none;
     background-color: #766357;
     color: white;
 }
-
+.btn-brown:hover {
+    background-color: #604e43;
+}
 .hotel-5stars {
     content: "";
     display: block;
@@ -335,37 +352,35 @@ input[type="checkbox"]:checked + label::after {
     color: #8b8b8b;
 }
 /*--------------------------------------------Промоблок с логотипом---------------------------------------------------*/
+
 .promo {
-    min-height: 505px;
-    padding-top: 158px;
-    background: url("../img/background-promo.jpg") no-repeat;
+    min-height: 431px;
+    padding-top: 77px;
     background-size: cover;
+    background: url("../img/background-promo.jpg") no-repeat 50% 28%;
     position: relative;
-    z-index: 1;
-    margin: -82px auto 0;
 }
 
+.promo::after {
+    position: absolute;
+    background-size: 100% 57px;
+    bottom: 0;
+    content: "";
+    height: 57px;
+    width: 100%;
+    background-image: url("../img/shape.png");
+}
 .promo img {
     margin: 0 auto;
     display: block;
 }
 
 /*------------------------- Преимущества хедер и 1 строка и Преимущества 3 строка-------------------------------------*/
-.shape {
-    background-image: url("../img/shape.png");
-    position: absolute;
-    left: 0;
-    top: 510px;
-    width: 1200px;
-    height: 57px;
-    z-index: 57;
-}
 
 .reason-header {
     position: relative;
-    margin-top: -70px;
     z-index: 4;
-    padding-top: 57px;
+    padding-top: 60px;
     padding-bottom: 38px;
     background-color: white;
     text-align: center;
@@ -431,15 +446,15 @@ input[type="checkbox"]:checked + label::after {
     padding-bottom: 81px;
 }
 .home {
-    background: url("../img/home.png") 50% 20% no-repeat;
+    background: url("../img/home1.png") 50% 23% no-repeat;
     background-size: 74px 74px;
 }
 .eat {
-    background: url("../img/food.png") 50% 20% no-repeat;
+    background: url("../img/food1.png") 50% 23% no-repeat;
     background-size: 70px 74px;
 }
 .gifts {
-    background: url("../img/gift.png") 50% 20% no-repeat;
+    background: url("../img/gift1.png") 50% 23% no-repeat;
     background-size: 67px 75px;
 }
 .reason-text-2 {
@@ -525,13 +540,14 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .search-form-row {
-    padding-bottom: 35px;
+    padding-bottom: 28px;
 }
 
 .search-form-label {
     font-weight: bold;
     float: left;
     padding-top: 10px;
+    padding-left: 3px;
 }
 
 .search-form-field {
@@ -556,7 +572,8 @@ input[type="checkbox"]:checked + label::after {
     background-color: transparent;
     border: none;
     right: 0;
-    margin-right: 55px;
+    margin-right: 57px;
+    margin-top: 2px;
 }
 
 .search-form-calendar::before {
@@ -597,25 +614,9 @@ input[type="checkbox"]:checked + label::after {
     height: 38px;
     background-color: #f2f2f2;
     border: none;
-    font-size: 0;
     margin: 0;
 }
-.number-btn-minus::before {
-    content: "";
-    width: 21px;
-    height: 22px;
-    color: black;
-    transform: translate(-50%,-50%);
-    background: url("../img/sprite.png") no-repeat -128px -119px;
-}
-.number-btn-plus::after {
-    content: "";
-    width: 21px;
-    height: 22px;
-    color: black;
-    transform: translate(-50%,-50%);
-    background: url("../img/sprite.png") no-repeat -128px -119px;
-}
+
 .search-form-btn {
     width: 458px;
     height: 58px;
@@ -626,7 +627,11 @@ input[type="checkbox"]:checked + label::after {
     font-size: 21px;
     text-transform: uppercase;
 }
-
+::-webkit-input-placeholder {
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 /* ------------------------------------------------------Футер--------------------------------------------------------*/
 .main-footer {
     position: absolute;
@@ -641,10 +646,10 @@ input[type="checkbox"]:checked + label::after {
 
 .column {
     display: inline-block;
-    width: 400px;
-    margin-bottom: 35px;
-    margin-top: 35px;
-    margin-left: -5px;
+    width: 394px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-left: 2px;
     text-align: center;
     font-size: 16px;
     vertical-align: middle;
@@ -660,8 +665,8 @@ input[type="checkbox"]:checked + label::after {
 .social-btn {
     display: inline-block;
     vertical-align: top;
-    width: 43px;
-    height: 43px;
+    width: 46px;
+    height: 46px;
     font-size: 0;
     background-color: #81b3d2;
     position: relative;
@@ -695,7 +700,10 @@ input[type="checkbox"]:checked + label::after {
 .copyright {
     font-size: 14px;
 }
+.copyright a {
+    padding-left: 5px;
 
+}
 .copyright span {
     vertical-align: middle;
 }
