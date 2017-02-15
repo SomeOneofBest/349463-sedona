@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -27,6 +27,7 @@
     </div>
 
     <article class="reason">
+        <div class="shape"></div>
         <header class="reason-header">
             <h1>cедона - небольшой городок в аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -98,30 +99,30 @@
     </div>
     <div class="search-form clearfix">
         <form action="" method="get">
-            <div class="search-form-row">
+            <div class="search-form-row clearfix">
                 <label class="search-form-label" for="from">Дата Заезда:</label>
                 <input class="search-form-field" type="text" id="from" placeholder="24 апреля 2016">
                 <button type="button" class="search-form-calendar">Календарь</button>
             </div>
 
-            <div class="search-form-row">
+            <div class="search-form-row clearfix">
                 <label class="search-form-label" for="to">Дата Выезда:</label>
                 <input class="search-form-field" type="text" id="to" placeholder="4 июля 2016">
                 <button type="button" class="search-form-calendar">Календарь</button>
             </div>
 
-            <div class="search-form-row">
+            <div class="search-form-row clearfix">
                 <div class="search-form-col">
                     <label for="number1" class="form-left-label">Взрослые:</label>
-                    <div class="number">
+                    <div class="number clearfix">
                         <button class="number-btn-minus">Минус</button>
                         <input class="form-right-field" type="text" id="number1" placeholder="2">
                         <button class="number-btn-plus">Плюс</button>
                     </div>
                 </div>
-                <div class="search-form-col">
+                <div class="search-form-col clearfix">
                     <label for="number2" class="form-left-label">Дети:</label>
-                    <div class="number">
+                    <div class="number clearfix">
                         <button class="number-btn-minus">Минус</button>
                         <input class="form-right-field" type="text" id="number2" placeholder="0">
                         <button class="number-btn-plus">Плюс</button>

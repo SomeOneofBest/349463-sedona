@@ -47,7 +47,9 @@ h2 {
     background-color: white;
     z-index: 4;
 }
-
+.header-menu a:hover {
+    color: #766357;
+}
 .menu-list {
     margin: 0;
     padding-left: 72px;
@@ -91,11 +93,12 @@ h2 {
 /*-------------------------------------Форма выбора отеля (sedona-hotels.html)----------------------------------------*/
 
 .options-form {
-    opacity: 0.7;
-    padding: 30px 68px;
-    background: url("../img/background-hotel.jpg") no-repeat;
+    padding: 32px 68px 25px;
+    background: url("../img/filter-background.jpg") no-repeat;
     background-size: 100%;
     display: block;
+    color: white;
+
 }
 
 .filter-form-left {
@@ -110,20 +113,26 @@ h2 {
     border: none;
     float: right;
     text-align: left;
-    padding-right: 70px;
+    padding-right: 0;
+    font-size: inherit;
 }
 
 .btn-transparent {
-    width: 137px;
+    width: 135px;
     height: 35px;
     margin: 25px 96px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 2px solid white;
 }
 
 .options-hotel input[type="checkbox"] + label {
     display: inline-block;
     width: 110px;
-    line-height: 32px;
 }
+
 input[type="checkbox"] {
     display: none;
 }
@@ -161,7 +170,7 @@ input[type="checkbox"]:checked + label::after {
 
 .search-inform {
     margin: 0 auto;
-    padding: 30px 70px 22px 73px;
+    padding: 0 70px 0 73px;
     background-color: white;
     border-bottom: 2px solid whitesmoke;
 }
@@ -201,8 +210,26 @@ input[type="checkbox"]:checked + label::after {
 .hotel-cursor {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 120px;
 }
-
+.hotel-sort-cursor::before {
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 10px;
+    background: url(../img/sprite.png) no-repeat -129px -89px;
+}
+.hotel-sort-cursor2::before {
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 10px;
+    background: url(../img/sprite.png) no-repeat -98px -89px;
+}
 /*--------------------------------------------Найденные отели (sedona-hotels.html)------------------------------------*/
 
 .hotel {
@@ -232,6 +259,7 @@ input[type="checkbox"]:checked + label::after {
     font-size: 21px;
     text-decoration: none;
     line-height: 26px;
+    color: black;
 }
 
 .hotel-rate {
@@ -257,17 +285,55 @@ input[type="checkbox"]:checked + label::after {
 .btn-blue {
     padding: 5px 15px 5px 15px;
     text-decoration: none;
-    background-color: cornflowerblue;
+    background-color: #81b3d2;
     color: white;
 }
 
 .btn-brown {
     padding: 5px 15px 5px 15px;
     text-decoration: none;
-    background-color: chocolate;
+    background-color: #766357;
     color: white;
 }
 
+.hotel-5stars {
+    content: "";
+    display: block;
+    font-size: 0;
+    position: relative;
+    left: 20px;
+    width: 89px;
+    height: 17px;
+    background: url(../img/sprite.png) no-repeat -10px -47px;
+}
+.hotel-3stars {
+    content: "";
+    display: block;
+    position: relative;
+    left: 40px;
+    font-size: 0;
+    width: 65px;
+    height: 17px;
+    background: url(../img/sprite.png) no-repeat -72px -10px;
+}
+
+.hotel-2stars {
+    content: "";
+    display: block;
+    font-size: 0;
+    position: relative;
+    left: 60px;
+    width: 42px;
+    height: 17px;
+    background: url(../img/sprite.png) no-repeat -10px -10px;
+}
+.hotel-rate-text {
+    margin-top: 40%;
+    text-align: center;
+    padding: 5px;
+    background-color: #f2f2f2;
+    color: #8b8b8b;
+}
 /*--------------------------------------------Промоблок с логотипом---------------------------------------------------*/
 .promo {
     min-height: 505px;
@@ -285,6 +351,15 @@ input[type="checkbox"]:checked + label::after {
 }
 
 /*------------------------- Преимущества хедер и 1 строка и Преимущества 3 строка-------------------------------------*/
+.shape {
+    background-image: url("../img/shape.png");
+    position: absolute;
+    left: 0;
+    top: 510px;
+    width: 1200px;
+    height: 57px;
+    z-index: 57;
+}
 
 .reason-header {
     position: relative;
@@ -443,46 +518,113 @@ input[type="checkbox"]:checked + label::after {
     background-color: white;
     color: black;
     padding: 55px;
+    vertical-align: middle;
     left: 50%;
     margin-left: -285px;
     box-shadow: 7px 0 15px rgba(0,0,0,0.15);
 }
 
 .search-form-row {
-
+    padding-bottom: 35px;
 }
 
 .search-form-label {
     font-weight: bold;
     float: left;
+    padding-top: 10px;
 }
 
 .search-form-field {
     float: right;
-    width: 345px;
+    position: relative;
+    display: inline-block;
+    width: 295px;
     padding-left: 10px;
     padding-right: 40px;
     border: none;
     height: 36px;
     line-height: 36px;
-    background-color: silver;
+    background-color: #f2f2f2;
+}
+
+.search-form-calendar {
+    vertical-align: top;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    right: 0;
+    margin-right: 55px;
+}
+
+.search-form-calendar::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    transform: translate(-50%,-50%);
+    background: url("../img/sprite.png") no-repeat -119px -47px;
 }
 
 .search-form-col {
     width: 230px;
+    float: left;
 }
 
 .form-left-label {
     float: left;
+    margin-top: 10px;
 }
-
-.form-right-field {
+.number {
     float: right;
 }
 
+.form-right-field {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: none;
+}
+.number-btn-minus,.form-right-field {
+    float: left;
+}
+
+.number-btn-minus, .number-btn-plus {
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 0;
+    margin: 0;
+}
+.number-btn-minus::before {
+    content: "";
+    width: 21px;
+    height: 22px;
+    color: black;
+    transform: translate(-50%,-50%);
+    background: url("../img/sprite.png") no-repeat -128px -119px;
+}
+.number-btn-plus::after {
+    content: "";
+    width: 21px;
+    height: 22px;
+    color: black;
+    transform: translate(-50%,-50%);
+    background: url("../img/sprite.png") no-repeat -128px -119px;
+}
 .search-form-btn {
     width: 458px;
     height: 58px;
+    margin-top: 30px;
+    background-color: #81b3d2;
+    color: white;
+    border: none;
+    font-size: 21px;
+    text-transform: uppercase;
 }
 
 /* ------------------------------------------------------Футер--------------------------------------------------------*/
@@ -531,8 +673,6 @@ input[type="checkbox"]:checked + label::after {
     left: 50%;
     transform: translate(-50%,-50%);
     background: url("../img/sprite.png") no-repeat;
-
-
 }
 .social-btn-tv::before {
     width: 17px;
@@ -563,6 +703,16 @@ input[type="checkbox"]:checked + label::after {
 .copyright img {
     vertical-align: middle;
 }
+/* ----------------------------------------------------Футер (sedona-hotels.html)-------------------------------------*/
+.main-footer-1 {
+    bottom: 0;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: white;
+}
+
 /* ------------------------------------------------------Спрайты------------------------------------------------------*/
 
 .sprite {
@@ -647,3 +797,5 @@ input[type="checkbox"]:checked + label::after {
     height: 16px;
     background-position: -47px -142px;
 }
+
+
