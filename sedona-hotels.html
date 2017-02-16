@@ -5,17 +5,17 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
         <nav class="header-menu">
-            <ul class="menu-list clearfix">
-                <li class="menu-item left"><a href="#">информация</a></li>
-                <li class="menu-item left"><a href="#">фото и видео</a></li>
-                <li class="menu-item-2 right"><a>гостиницы</a></li>
-                <li class="menu-item-2 right"><a href="#">карта штата</a></li>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#">информация</a></li>
+                <li class="menu-item"><a href="#">фото и видео</a></li>
+                <li class="menu-item"><a href="#">карта штата</a></li>
+                <li class="menu-item"><a>гостиницы</a></li>
             </ul>
         </nav>
         <a href="index.html" class="logo">
@@ -24,9 +24,9 @@
     </header>
 
     <div class="options-form clearfix">
-        <form action="" class="options-hotel" method="get">
+        <form action="index.html" class="options-hotel" method="get">
             <fieldset class="filter-form-left">
-                <legend>Инфрастуктура:</legend>
+                <legend>Инфраструктура:</legend>
 
                 <input type="checkbox" id="swimingpool" value="Бассейн" checked>
                 <label for="swimingpool">Бассейн</label>
@@ -52,14 +52,17 @@
             </fieldset>
 
             <fieldset class="filter-form-right">
-                <legend>Стоимость в сутки(р):</legend>
+                <legend class="filter-title">Стоимость в сутки (р):</legend>
                 <div class="range-bar">
-                    <div class="range-from"></div>
-                    <div class="range-to"></div>
-                    <div class="range-scale">Шкала</div>
-
-                    <button class="range-btn-from" type="button">От 0</button>
-                    <button class="range-btn-to" type="button">До 3000</button>
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
                 </div>
                 <button class="btn-transparent" type="submit">Показать</button>
             </fieldset>
@@ -67,10 +70,10 @@
     </div>
 
     <div class="search-inform ">
-        <span class="search-title">Найдено:3</span>
+        <span class="search-title">Найдено: 3</span>
         <div class="hotel-sort"><p>Сортировка:</p>
             <ul>
-                <li class="hotel-sort-item"><a href="#" class="hotel-sort-link">По цене</a></li>
+                <li class="hotel-sort-item"><a href="#" class="hotel-sort-link1">По цене</a></li>
                 <li class="hotel-sort-item"><a href="#" class="hotel-sort-link">По типу</a></li>
                 <li class="hotel-sort-item"><a href="#" class="hotel-sort-link">По рейтингу</a></li>
             </ul>
@@ -92,13 +95,13 @@
                 <a class="btn-blue" href="">Подробнее</a>
             </div>
             <div class="hotel-block-btn">
-                <span>От 4000р.</span>
+                <span>От 4000 р.</span>
                 <a class="btn-brown" href="">Забронировать</a>
             </div>
         </div>
         <div class="hotel-rate">
             <div class="hotel-5stars">5 звезд</div>
-            <div class="hotel-rate-text">Рейтинг 8,5</div>
+            <div class="hotel-rate-text">Рейтинг: 8,5</div>
         </div>
     </article>
     <!-- 2й отель-->
@@ -113,13 +116,13 @@
                 <a class="btn-blue" href="">Подробнее</a>
             </div>
             <div class="hotel-block-btn">
-                <span>От 3000р.</span>
+                <span>От 3000 р.</span>
                 <a class="btn-brown" href="">Забронировать</a>
             </div>
         </div>
         <div class="hotel-rate">
             <div class="hotel-3stars">3 звезды</div>
-            <div class="hotel-rate-text">Рейтинг 8,9</div>
+            <div class="hotel-rate-text">Рейтинг: 8,9</div>
         </div>
     </article>
     <!-- 3й отель -->
@@ -134,13 +137,13 @@
                 <a class="btn-blue" href="">Подробнее</a>
             </div>
             <div class="hotel-block-btn">
-                <span>От 2000р.</span>
+                <span>От 2000 р.</span>
                 <a class="btn-brown" href="">Забронировать</a>
             </div>
         </div>
         <div class="hotel-rate">
             <div class="hotel-2stars">2 Звезд</div>
-            <div class="hotel-rate-text">Рейтинг 9,2</div>
+            <div class="hotel-rate-text">Рейтинг: 9,2</div>
         </div>
     </article>
     <footer class="main-footer-1">

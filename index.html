@@ -5,17 +5,17 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
         <nav class="header-menu">
-            <ul class="menu-list clearfix">
-                <li class="menu-item left"><a href="#">информация</a></li>
-                <li class="menu-item left"><a href="#">фото и видео</a></li>
-                <li class="menu-item-2 right"><a href="sedona-hotels.html">гостиницы</a></li>
-                <li class="menu-item-2 right"><a href="#">карта штата</a></li>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#">информация</a></li>
+                <li class="menu-item"><a href="#">фото и видео</a></li>
+                <li class="menu-item"><a href="#">карта штата</a></li>
+                <li class="menu-item"><a href="sedona-hotels.html">гостиницы</a></li>
             </ul>
         </nav>
         <a class="logo">
@@ -36,14 +36,14 @@
             <div class="reason-option left">
                 <h2 class="reason-title">Настоящий городок</h2>
                 <div class="reason-number">№1</div>
-                <p class="reason-text-1">Седона - не аттракцион для туристов, там течет своя жизнь!</p>
+                <p class="reason-text-1">Седона -- не аттракцион для туристов, там течет своя жизнь!</p>
             </div>
-            <div class="reason-pictures right">
-                <img src="img/photo-1.png" height="257" width="800">
+            <div class="reason-pictures">
+                <img src="img/photo-1.png" alt="горы" height="257" width="800">
             </div>
         </div>
         <!-- 2 -->
-        <div class="reason-icon clearfix">
+        <div class="reason-icon">
             <div class="reason-icon-name home">
                 <h2 class="reason-title">Жильё</h2>
                 <p class="reason-text-1">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -67,12 +67,12 @@
                 <div class="reason-number">№2</div>
                 <p class="reason-text-1">Да, по нему можно пройти! Если конечно Вы осмелитесь!</p>
             </div>
-            <div class="reason-pictures left">
-                <img src="img/photo-2.png" height="257" width="800">
+            <div class="reason-pictures">
+                <img src="img/photo-2.png" alt="еще горы=)" height="257" width="800">
             </div>
         </div>
         <!-- 4 -->
-        <div class="reason-gray clearfix">
+        <div class="reason-gray">
             <div class="reason-gray-option">
                 <h2 class="reason-title">Небольшая площадь</h2>
                 <div class="reason-number">№3</div>
@@ -94,10 +94,10 @@
     <div class="search-form-header">
         <h2 class="call-to-action">Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки, и мы покажем лучшие предложения гостиниц в седоне</p>
-        <a  class="search-form-link" href="#">Поиск гостинницы в Седоне</a>
+        <a class="search-form-link" href="#">Поиск гостиницы в Седоне</a>
     </div>
     <div class="search-form clearfix">
-        <form action="" method="get">
+        <form action="index.html" method="get">
             <div class="search-form-row clearfix">
                 <label class="search-form-label" for="from">Дата Заезда:</label>
                 <input class="search-form-field" type="text" id="from" placeholder="24 апреля 2017">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="search-form-col clearfix">
-                    <label for="number2" class="form-left-label">Дети:</label>
+                    <label for="number2" class="form-left-label2">Дети:</label>
                     <div class="number clearfix">
                         <button class="number-btn-minus">-</button>
                         <input class="form-right-field" type="text" id="number2" placeholder="0">
