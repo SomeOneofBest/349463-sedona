@@ -9,7 +9,6 @@ html, body {
     text-transform: uppercase;
     color: black;
     background-color: #f2f2f2;
-
 }
 
 .wrapper {
@@ -29,7 +28,6 @@ html, body {
 .header {
     position: relative;
     background-color: white;
-    z-index: 4;
 }
 
 .header-menu a:hover {
@@ -83,7 +81,6 @@ html, body {
     z-index: 5;
 }
 
-
 /*-------------------------------------Форма со шкалой (sedona-hotels.html)----------------------------------------*/
 .filter-form-right {
     float: right;
@@ -99,6 +96,7 @@ html, body {
     line-height: 20px;
     margin-left: -9px;
 }
+
 .range-bar {
     position: relative;
     height: 32px;
@@ -107,6 +105,7 @@ html, body {
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
+
 .range-bar::after {
     content: "";
     position: absolute;
@@ -117,6 +116,7 @@ html, body {
     transform: translate(-50%, -50%);
     background: #ffffff;
 }
+
 .range-bar label {
     display: inline-block;
     font-size: 14px;
@@ -125,12 +125,14 @@ html, body {
     vertical-align: top;
     cursor: pointer;
 }
+
 .range-bar .min-price,
 .range-bar .max-price {
     width: 90px;
     padding-left: 55px;
     text-align: center;
 }
+
 .range-bar input {
     width: 50px;
     margin: 0;
@@ -139,21 +141,23 @@ html, body {
     background: none;
     border: none;
 }
+
 .range-controls {
     position: relative;
     margin-bottom: 32px;
 }
+
 .range-controls .scale {
     height: 2px;
-
     background: rgba(255, 255, 255, 0.3);
 }
+
 .range-controls .bar {
     width: 80%;
     height: 2px;
-
     background: #ffffff;
 }
+
 .range-toggle {
     position: absolute;
     top: -9px;
@@ -165,9 +169,11 @@ html, body {
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
+
 .range-toggle:hover {
     background: #1c4f80;
 }
+
 .range-toggle-min {
     left: 0;
 }
@@ -179,7 +185,7 @@ html, body {
 .btn-transparent {
     display: block;
     margin: 0 auto 0 85px;
-    padding: 6px 30px;
+    padding: 6px 33px;
     font-size: 13px;
     line-height: 20px;
     color: #ffffff;
@@ -189,10 +195,12 @@ html, body {
     border-radius: 2px;
     cursor: pointer;
 }
+
 .btn-transparent:hover {
     color: #000000;
     background: #ffffff;
 }
+
 /*-------------------------------------Форма выбора отеля (sedona-hotels.html)----------------------------------------*/
 
 .options-form {
@@ -216,7 +224,6 @@ html, body {
 legend {
     padding-bottom: 5px;
 }
-
 
 .options-hotel input[type="checkbox"] + label {
     display: inline-block;
@@ -314,7 +321,7 @@ input[type="checkbox"]:checked + label::after {
     text-decoration: none;
     color: #8b8b8b;
     font-weight: normal;
-    border-bottom: dotted #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
 }
 
 .hotel-sort-link:hover {
@@ -339,7 +346,7 @@ input[type="checkbox"]:checked + label::after {
     left: 0;
     width: 11px;
     height: 10px;
-    background: url(../img/sprite.png) no-repeat -129px -89px;
+    background: url(../img/sprite.png) no-repeat -98px -89px;
 }
 
 .hotel-sort-cursor2::before {
@@ -349,7 +356,7 @@ input[type="checkbox"]:checked + label::after {
     left: 0;
     width: 11px;
     height: 10px;
-    background: url(../img/sprite.png) no-repeat -98px -89px;
+    background: url(../img/sprite.png) no-repeat -129px -89px;
 }
 
 /*--------------------------------------------Найденные отели (sedona-hotels.html)------------------------------------*/
@@ -549,7 +556,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .reason-title {
-    width: 150px;
+    width: 151px;
     margin: 0 auto 25px;
 }
 
@@ -579,7 +586,6 @@ input[type="checkbox"]:checked + label::after {
     text-align: center;
     background-color: white;
     font-size: 0;
-
 }
 
 .reason-icon-name {
@@ -625,10 +631,9 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .reason-text-2 {
-    width: 285px;
+    width: 280px;
     margin: 0 auto;
     font-weight: normal;
-
 }
 
 /*------------------------------------------------Преимущества 4 строка-----------------------------------------------*/
@@ -678,14 +683,12 @@ input[type="checkbox"]:checked + label::after {
     font-weight: bold;
     color: white;
     display: inline-block;
-
 }
 
 .search-form-link a {
     box-sizing: border-box;
     width: 100%;
     min-height: 56px;
-
 }
 
 /*---------------------------------------------------------Карта------------------------------------------------------*/
