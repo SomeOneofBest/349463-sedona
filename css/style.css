@@ -967,7 +967,7 @@ input[type="checkbox"]:checked + label::after {
     height: 19px;
     background-position: -98px -119px;
 }
-.social-btn-fb:active:hover {
+.social-btn-fb:active:before {
     width: 10px;
     height: 19px;
     background: #5496bd url("../img/sprite2.png") -10px -133px;
