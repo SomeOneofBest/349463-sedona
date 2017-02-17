@@ -1002,29 +1002,34 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .copyright {
-    font-size: 14px;
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: inherit;
 }
 
-.copyright a {
-    padding-left: 5px;
-
+.logo-htmlacademy::before {
+    content: "";
+    top: -6px;
+    right: 23%;
+    position: absolute;
+    width: 119px;
+    height: 45px;
+    background: url("../img/logo-htmlacademy.png") no-repeat;
 }
 
 .copyright span {
-    vertical-align: middle;
     font-weight: normal;
+    font-size: 14px;
+    margin-left: -117px;
 }
 
-.copyright img {
-    vertical-align: middle;
-}
-
-.btn img:hover {
+.logo-htmlacademy:hover:before {
     vertical-align: middle;
     background-image: url("../img/logo-htmlacademy1.png");
 }
 
-.btn img:active {
+.logo-htmlacademy:active:before {
     vertical-align: middle;
     background-image: url("../img/logo-htmlacademy2.png");
 }
