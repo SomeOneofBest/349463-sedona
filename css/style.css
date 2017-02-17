@@ -346,9 +346,14 @@ input[type="checkbox"]:checked + label::after {
     left: 0;
     width: 11px;
     height: 10px;
-    background: url(../img/sprite.png) no-repeat -98px -89px;
+    background: url(../img/sprite3.png) no-repeat -10px -10px;
 }
-
+.hotel-sort-cursor:hover:before {
+    background: url("../img/sprite3.png") -41px -10px;
+}
+.hotel-sort-cursor:active:before {
+    background: url("../img/sprite3.png") -10px -40px;
+}
 .hotel-sort-cursor2::before {
     content: "";
     display: inline-block;
@@ -357,9 +362,14 @@ input[type="checkbox"]:checked + label::after {
     width: 11px;
     height: 10px;
     margin-left: 8px;
-    background: url(../img/sprite.png) no-repeat -129px -89px;
+    background: url(../img/sprite3.png) no-repeat -41px -40px;
 }
-
+.hotel-sort-cursor2:hover:before {
+    background: url("../img/sprite3.png") -72px -10px;
+}
+.hotel-sort-cursor2:active:before {
+    background: url("../img/sprite3.png") -72px -40px;
+}
 /*--------------------------------------------Найденные отели (sedona-hotels.html)------------------------------------*/
 
 .hotel {
@@ -767,12 +777,15 @@ input[type="checkbox"]:checked + label::after {
     transform: translate(-50%, -50%);
     background: url("../img/sprite.png") no-repeat -119px -47px;
 }
+
 .search-form-calendar:hover:before {
     background: url("../img/sprite2.png") -10px -10px;
 }
+
 .search-form-calendar:active:before {
     background: url("../img/sprite2.png") -10px -52px;
 }
+
 .search-form-col {
     width: 230px;
     float: left;
@@ -940,7 +953,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .social-btn:active {
-    background-color: #5496bd ;
+    background-color: #5496bd;
 }
 
 .social-btn::before {
@@ -957,31 +970,37 @@ input[type="checkbox"]:checked + label::after {
     height: 15px;
     background-position: -10px -142px;
 }
+
 .social-btn-tv:active:before {
     width: 17px;
     height: 15px;
     background: #5496bd url("../img/sprite2.png") -10px -172px;
 }
+
 .social-btn-fb::before {
     width: 10px;
     height: 19px;
     background-position: -98px -119px;
 }
+
 .social-btn-fb:active:before {
     width: 10px;
     height: 19px;
     background: #5496bd url("../img/sprite2.png") -10px -133px;
 }
+
 .social-btn-youtube::before {
     width: 20px;
     height: 16px;
     background-position: -47px -142px;
 }
+
 .social-btn-youtube:active:before {
     width: 20px;
     height: 16px;
     background: #5496bd url("../img/sprite2.png") -10px -207px;
 }
+
 .copyright {
     font-size: 14px;
 }
@@ -999,10 +1018,12 @@ input[type="checkbox"]:checked + label::after {
 .copyright img {
     vertical-align: middle;
 }
+
 .btn img:hover {
     vertical-align: middle;
     background-image: url("../img/logo-htmlacademy1.png");
 }
+
 .btn img:active {
     vertical-align: middle;
     background-image: url("../img/logo-htmlacademy2.png");
@@ -1108,11 +1129,6 @@ input[type="checkbox"]:checked + label::after {
     display: block;
 }
 
-.sprite {
-    background: url(../img.sprite2.png) no-repeat;
-    display: block;
-}
-
 .sprite-calendar2 {
     width: 21px;
     height: 22px;
@@ -1147,4 +1163,44 @@ input[type="checkbox"]:checked + label::after {
     width: 20px;
     height: 16px;
     background-position: -10px -207px;
+}
+.sprite {
+    background: url(../img/sprite3.png) no-repeat;
+    display: block;
+}
+
+.sprite-cursordown {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -10px;
+}
+
+.sprite-cursordown1 {
+    width: 11px;
+    height: 10px;
+    background-position: -41px -10px;
+}
+
+.sprite-cursordown2 {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -40px;
+}
+
+.sprite-cursorup {
+    width: 11px;
+    height: 10px;
+    background-position: -41px -40px;
+}
+
+.sprite-cursorup1 {
+    width: 11px;
+    height: 10px;
+    background-position: -72px -10px;
+}
+
+.sprite-cursorup2 {
+    width: 11px;
+    height: 10px;
+    background-position: -72px -40px;
 }
