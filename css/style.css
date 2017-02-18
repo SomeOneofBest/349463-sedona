@@ -268,6 +268,28 @@ input[type="checkbox"]:checked + label::after {
     background: url(../img/sprite.png) no-repeat -52px -84px;
 }
 
+input[type="checkbox"]:disabled + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    opacity: 0.2;
+    background: url(../img/sprite.png) no-repeat -10px -84px;
+}
+
+input[type="checkbox"]:checked:disabled + label::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 26px;
+    height: 22px;
+    opacity: 0.2;
+    background: url(../img/sprite.png) no-repeat -52px -84px;
+}
 /*-------------------------------------Форма c найденными отелями (sedona-hotels.html)--------------------------------*/
 
 .search-inform {
@@ -346,14 +368,15 @@ input[type="checkbox"]:checked + label::after {
     left: 0;
     width: 11px;
     height: 10px;
-    background: url(../img/sprite3.png) no-repeat -10px -10px;
+    background: url(../img/sprite3.png) no-repeat -41px -40px;
 }
 .hotel-sort-cursor:hover:before {
-    background: url("../img/sprite3.png") -41px -10px;
+    background: url("../img/sprite3.png") -72px -10px;
 }
 .hotel-sort-cursor:active:before {
-    background: url("../img/sprite3.png") -10px -40px;
+    background: url("../img/sprite3.png") -72px -40px;
 }
+
 .hotel-sort-cursor2::before {
     content: "";
     display: inline-block;
@@ -362,14 +385,15 @@ input[type="checkbox"]:checked + label::after {
     width: 11px;
     height: 10px;
     margin-left: 8px;
-    background: url(../img/sprite3.png) no-repeat -41px -40px;
+    background: url(../img/sprite3.png) no-repeat -10px -40px;
 }
 .hotel-sort-cursor2:hover:before {
-    background: url("../img/sprite3.png") -72px -10px;
+    background: url("../img/sprite3.png") -41px -10px;
 }
 .hotel-sort-cursor2:active:before {
-    background: url("../img/sprite3.png") -72px -40px;
+    background: url("../img/sprite3.png") -10px -40px;
 }
+
 /*--------------------------------------------Найденные отели (sedona-hotels.html)------------------------------------*/
 
 .hotel {
@@ -509,7 +533,7 @@ input[type="checkbox"]:checked + label::after {
     min-height: 431px;
     padding-top: 77px;
     background-size: cover;
-    background: url("../img/background-promo1.jpg") no-repeat 50% 21%;
+    background: url("../img/background-promo.jpg") no-repeat 50% 21%;
     position: relative;
 }
 
@@ -729,7 +753,7 @@ input[type="checkbox"]:checked + label::after {
 
 .search-form-label {
     float: left;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-left: 2px;
     font-weight: bold;
     line-height: 26px;
@@ -753,7 +777,9 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .search-form-field:active {
+    border: 1px solid #8b8b8b;
     background-color: transparent;
+    box-sizing: content-box;
 }
 
 .search-form-calendar {
@@ -794,20 +820,23 @@ input[type="checkbox"]:checked + label::after {
 .form-left-label {
     float: left;
     margin-top: 10px;
+    padding-right: 78px;
 }
 
 .form-left-label2 {
     float: left;
     margin-top: 10px;
     margin-left: 50px;
+    padding-right: 62px;
 }
 
 /*!*---------------------------------кнопки ПЛЮС И МИНУС--*/
 .number {
-    float: right;
+    margin-right: 0;
 }
 
 .form-right-field {
+    /*float: right;*/
     width: 36px;
     height: 36px;
     margin-right: 38px;
@@ -816,9 +845,9 @@ input[type="checkbox"]:checked + label::after {
     border: none;
 }
 
-.number-btn-minus, .form-right-field {
-    float: left;
-}
+/*.number-btn-minus, .form-right-field {*/
+    /*float: left;*/
+/*}*/
 
 .children {
     left: 71%;
@@ -890,12 +919,18 @@ input[type="checkbox"]:checked + label::after {
     text-transform: uppercase;
 }
 
-::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 13px;
     line-height: 26px;
+}
+input::-moz-placeholder {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .search-form-btn:hover {
