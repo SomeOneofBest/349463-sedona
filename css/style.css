@@ -141,7 +141,6 @@ html, body {
     width: 50px;
     margin: 0;
     color: inherit;
-    font: inherit;
     background: none;
     border: none;
 }
@@ -209,7 +208,7 @@ html, body {
 
 .options-form {
     padding: 27px 72px 8px;
-    background: url("../img/hotels/filter-background.jpg") no-repeat no-repeat 50% 18%;
+    background: url("../img/filter-background.jpg") no-repeat no-repeat 50% 18%;
     background-size: cover;
     display: block;
     color: white;
@@ -381,11 +380,11 @@ input[type="checkbox"]:checked:disabled + label::after {
     background: url(../img/spritesheets.png) no-repeat -10px -421px;
 }
 
-.hotel-sort-cursor:hover:before {
+.hotel-sort-cursor:hover::before {
     background: url("../img/spritesheets.png") -10px -451px;
 }
 
-.hotel-sort-cursor:active:before {
+.hotel-sort-cursor:active::before {
     background: url("../img/spritesheets.png") -10px -481px;
 }
 
@@ -401,11 +400,11 @@ input[type="checkbox"]:checked:disabled + label::after {
     background: url(../img/spritesheets.png) no-repeat -10px -391px; /*не смог подобрать класс с нужными свойствами начальное значение 331 - состояние покоя*/
 }
 
-.hotel-sort-cursor2:hover:before {
+.hotel-sort-cursor2:hover::before {
     background: url("../img/spritesheets.png") -10px -361px;
 }
 
-.hotel-sort-cursor2:active:before {
+.hotel-sort-cursor2:active::before {
     background: url("../img/spritesheets.png") -10px -391px;
 }
 
@@ -829,11 +828,11 @@ input[type="checkbox"]:checked:disabled + label::after {
     background: url("../img/spritesheets.png") no-repeat -10px -121px;
 }
 
-.search-form-calendar:hover:before {
+.search-form-calendar:hover::before {
     background: url("../img/spritesheets.png") -10px -163px;
 }
 
-.search-form-calendar:active:before {
+.search-form-calendar:active::before {
     background: url("../img/spritesheets.png") -10px -205px;
 }
 
@@ -895,16 +894,16 @@ input[type="checkbox"]:checked:disabled + label::after {
     border-radius: 1px;
 }
 
-.number-btn-minus:hover:before {
+.number-btn-minus:hover::before {
     background-color: black;
 }
 
-.number-btn-minus:active:before {
+.number-btn-minus:active::before {
     background-color: #81b3d2;
 }
 
-.number-btn-plus:before,
-.number-btn-plus:after {
+.number-btn-plus::before,
+.number-btn-plus::after {
     content: "";
     position: absolute;
     width: 12px;
@@ -915,17 +914,17 @@ input[type="checkbox"]:checked:disabled + label::after {
     border-radius: 1px;
 }
 
-.number-btn-plus:after {
+.number-btn-plus::after {
     transform: rotate(90deg);
 }
 
-.number-btn-plus:hover:before,
-.number-btn-plus:hover:after {
+.number-btn-plus:hover::before,
+.number-btn-plus:hover::after {
     background-color: black;
 }
 
-.number-btn-plus:active:before,
-.number-btn-plus:active:after {
+.number-btn-plus:active::before,
+.number-btn-plus:active::after {
     background-color: #81b3d2;
 }
 
@@ -1013,7 +1012,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     background-position: -10px -550px;
 }
 
-.social-btn-tv:active:before {
+.social-btn-tv:active::before {
     width: 17px;
     height: 15px;
     opacity: 0.4;
@@ -1026,7 +1025,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     background-position: -10px -511px;
 }
 
-.social-btn-fb:active:before {
+.social-btn-fb:active::before {
     width: 10px;
     height: 19px;
     opacity: 0.4;
@@ -1039,7 +1038,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     background-position: -10px -585px;
 }
 
-.social-btn-youtube:active:before {
+.social-btn-youtube:active::before {
     width: 20px;
     height: 16px;
     opacity: 0.4;
@@ -1069,12 +1068,12 @@ input[type="checkbox"]:checked:disabled + label::after {
     margin-left: -117px;
 }
 
-.logo-htmlacademy:hover:before {
+.logo-htmlacademy:hover::before {
     vertical-align: middle;
     background-image: url("../img/logo-htmlacademy1.png");
 }
 
-.logo-htmlacademy:active:before {
+.logo-htmlacademy:active::before {
     vertical-align: middle;
     background-image: url("../img/logo-htmlacademy2.png");
 }
