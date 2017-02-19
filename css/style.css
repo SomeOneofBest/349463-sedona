@@ -548,7 +548,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     min-height: 431px;
     padding-top: 77px;
     background-size: cover;
-    background: url("../img/background-promo.jpg") no-repeat 50% 21%;
+    background: url("../img/promo-background.jpg") no-repeat 50% 21%;
     position: relative;
 }
 
