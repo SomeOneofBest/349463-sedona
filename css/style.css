@@ -211,7 +211,7 @@ html, body {
 /*-------------------------------------Форма выбора отеля (sedona-hotels.html)----------------------------------------*/
 
 .options-form {
-    padding: 28px 72px 8px;
+    padding: 28px 72px 9px;
     background: #81b3d2 url(../img/filter-background.jpg) no-repeat no-repeat 50% 18%;
     background-size: cover;
     display: block;
@@ -320,20 +320,25 @@ html, body {
     display: inline-block;
     padding-top: 31px;
     padding-bottom: 30px;
-    padding-right: 44px;
+    padding-right: 45px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     vertical-align: middle;
-    /*margin-bottom: 3px;*/
+    max-width: 115px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .hotel-sort {
     display: inline-block;
-    padding-right: 350px;
+    padding-top: 3px;
     font-size: 12px;
     line-height: 18px;
-    vertical-align: baseline;
+    vertical-align: middle;
+    max-width: 800px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .hotel-sort p {
@@ -818,7 +823,9 @@ html, body {
     padding-left: 2px;
     font-weight: bold;
     line-height: 27px;
-    max-width: 100px;
+    max-width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .search-form-field {
@@ -886,6 +893,9 @@ html, body {
     float: left;
     margin-top: 9px;
     margin-right: 78px;
+    max-width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .form-left-label2 {
@@ -893,6 +903,9 @@ html, body {
     margin-top: 9px;
     margin-left: 50px;
     margin-right: 65px;
+    max-width: 39px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /*!*---------------------------------кнопки ПЛЮС И МИНУС--*/
