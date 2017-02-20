@@ -231,12 +231,14 @@ legend {
 
 .options-hotel input[type="checkbox"] + label {
     display: inline-block;
+    /*margin-bottom: 15px;*/
     width: 110px;
     line-height: 21px;
     font-weight: normal;
     font-size: 14px;
     margin-left: 0;
     vertical-align: middle;
+    padding-top: 5px;
 }
 
 input[type="checkbox"] {
@@ -326,7 +328,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     display: inline-block;
     padding-right: 350px;
     font-size: 12px;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 
 .hotel-sort p {
@@ -390,17 +392,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 .hotel-sort-cursor:active::before {
     background: url(../img/spritesheets.png) -10px -481px;
 }
-.hotel-sort-cursor2.pushing3 {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    top: 0;
-    left: 15px;
-    width: 11px;
-    height: 10px;
-    margin-left: 8px;
-    background: url(../img/spritesheets.png) -10px -391px;
-}
+
 
 .hotel-sort-cursor2::before {
     content: "";
@@ -452,6 +444,8 @@ input[type="checkbox"]:checked:disabled + label::after {
     line-height: 26px;
     text-decoration: none;
     color: black;
+    margin-top: -2px;
+
 }
 
 .hotel-content-name:hover {
@@ -469,15 +463,18 @@ input[type="checkbox"]:checked:disabled + label::after {
     padding-bottom: 25px;
 }
 
-.hotel-block-type, .hotel-block-btn {
+.hotel-block-type,
+.hotel-block-btn {
     display: inline-block;
     width: 100px;
     padding-right: 12px;
     line-height: 35px;
     vertical-align: bottom;
+    margin-top: -4px;
 }
 
-.hotel-block-type span, .hotel-block-btn span {
+.hotel-block-type span,
+.hotel-block-btn span {
     line-height: 40px;
     font-weight: normal;
 }
@@ -620,13 +617,14 @@ input[type="checkbox"]:checked:disabled + label::after {
 }
 
 .reason-title {
-    width: 151px;
+    max-width: 155px;
     margin: 0 auto 23px;
 }
 
 .reason-number {
     font-weight: normal;
     margin-bottom: 21px;
+    margin-left: -5px;
 }
 
 .reason-text-1 {
@@ -641,7 +639,9 @@ input[type="checkbox"]:checked:disabled + label::after {
 }
 
 .reason-pictures img {
-    vertical-align: bottom;
+    display: block;
+    width: 800px;
+    height: 256px;
 }
 
 /* -----------------------------------------------Преимущества 2 строка-----------------------------------------------*/
@@ -952,7 +952,7 @@ input[type="checkbox"]:checked:disabled + label::after {
     border: none;
     font-size: 21px;
     line-height: 26px;
-    font-weight: normal;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
