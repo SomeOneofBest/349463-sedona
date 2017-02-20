@@ -278,28 +278,28 @@ html, body {
     background: url(../img/spritesheets.png) no-repeat -10px -289px;
 }
 
-.checkbox-icon:disabled + .checkbox-name::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 22px;
-    height: 22px;
-    opacity: 0.2;
-    background: url(../img/spritesheets.png) no-repeat -10px -247px;
-}
+/*.checkbox-icon:disabled + .checkbox-name::before {*/
+    /*content: "";*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 3px;*/
+    /*left: 0;*/
+    /*width: 22px;*/
+    /*height: 22px;*/
+    /*opacity: 0.2;*/
+    /*background: url(../img/spritesheets.png) no-repeat -10px -247px;*/
+/*}*/
 
-.checkbox-icon:checked:disabled + .checkbox-name::after {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 26px;
-    height: 22px;
-    opacity: 0.2;
-    background: url(../img/spritesheets.png) no-repeat -10px -289px;
-}
+/*.checkbox-icon:checked:disabled + .checkbox-name::after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: 3px;*/
+    /*left: 0;*/
+    /*width: 26px;*/
+    /*height: 22px;*/
+    /*opacity: 0.2;*/
+    /*background: url(../img/spritesheets.png) no-repeat -10px -289px;*/
+/*}*/
 
 /*-------------------------------------Форма c найденными отелями (sedona-hotels.html)--------------------------------*/
 
@@ -320,11 +320,11 @@ html, body {
     display: inline-block;
     padding-top: 31px;
     padding-bottom: 30px;
-    padding-right: 45px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     vertical-align: middle;
+    min-width: 115px;
     max-width: 115px;
     overflow: hidden;
     white-space: nowrap;
@@ -333,9 +333,12 @@ html, body {
 .hotel-sort {
     display: inline-block;
     padding-top: 3px;
+    padding-right: 35px;
+    padding-left: 45px;
     font-size: 12px;
     line-height: 18px;
     vertical-align: middle;
+    min-width: 820px;
     max-width: 800px;
     overflow: hidden;
     white-space: nowrap;
@@ -383,7 +386,6 @@ html, body {
 .hotel-cursor {
     display: inline-block;
     vertical-align: baseline;
-    margin-left: 120px;
     font-size: 0;
 }
 
@@ -418,9 +420,7 @@ html, body {
     width: 11px;
     height: 10px;
     background: url(../img/spritesheets.png) -10px -391px;
-    font-size: 21px;
-    margin-left: 12px;
-    margin-bottom: 2px;
+
 }
 
 .hotel-sort-cursor2::before {
@@ -431,16 +431,14 @@ html, body {
     left: 0;
     width: 11px;
     height: 10px;
-    /*margin-left: 8px;*/
     background: url(../img/spritesheets.png) no-repeat -10px -331px;
-    font-size: 21px;
     margin-left: 12px;
-    margin-bottom: 2px;
+
 }
 
-.hotel-sort-cursor2:hover::before {
-    background: url(../img/spritesheets.png) -10px -361px;
-}
+/*.hotel-sort-cursor2:hover::before {*/
+    /*background: url(../img/spritesheets.png) -10px -361px;*/
+/*}*/
 
 .hotel-sort-cursor2:active::before {
     background: url(../img/spritesheets.png) -10px -391px;
